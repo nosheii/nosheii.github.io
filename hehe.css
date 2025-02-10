@@ -1,0 +1,604 @@
+/*html*/
+html{
+	background-color: #0E382B ;
+	color: white;
+}
+
+/*Forside*/
+forside* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.forside-body {
+    font-family: Georgia;
+    background-color: #20372C;
+    color: white;
+}
+.forside-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #20372C;
+    padding: 20px;
+    width: 100%;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+.apningstider {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+.forside-h1 {
+    font-size: 90px;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px; 
+}
+.restaurant-subtitle {
+    font-size: 20px;
+    font-style: italic;
+    color: #d8d8d8;
+    text-align: center;
+    margin-top: 0; 
+    margin-bottom: 1px; 
+}
+.facebook {
+    width: 70px;
+    height: 70px;
+}
+.facebook img {
+    width: 100%;
+    height: auto;
+}
+.facebook a:hover img {
+    opacity: 0.8; 
+}
+nav {
+    width: 100%;
+    margin-top: 20px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 20px 0;
+    background-color: #375221;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+nav ul li a {
+    color: white; 
+    font-size: 25px;
+    text-decoration: none;
+}
+.dropdown{
+	position:relative;
+}
+.Meny-content{
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+}
+.Meny-content a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.Meny-content a:hover{
+	background-color: green;
+}
+.dropdown:hover .Meny-content{
+	display: block;
+}
+.logo-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+.logo-link:hover {
+    cursor: pointer;
+    opacity: 0.9; 
+}
+.velkommen-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #20372C;
+    color: #d8d8d8;
+}
+.velkommen-section h2 {
+    font-size: 25px;
+    color: white;
+}
+.velkommen-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.gallery-section {
+    padding: 40px 20px;
+    background-color: #20372C;
+    text-align: center;
+}
+.gallery-section h2 {
+    font-size: 36px;
+    color: white;
+}
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+.gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+.adresse-section {
+    padding: 40px 20px;
+    background-color: #375221;
+    text-align: right;
+    color: #d8d8d8;
+}
+.adresse-section p {
+    font-size: 18px;
+}
+
+/*Om Oss*/
+.omoss{
+    color:white;
+    font-family: Courier, monospace;
+	font-style: bold;
+    font-size: 48px;
+    text-align:center;
+}
+.ramme,.ramme-linker{
+    color:white;
+    font-family: georgia;
+    font-size:28px;
+    margin-top:50px;
+    text-align:left;
+    border: 2px solid white;
+    border-style:solid;
+    padding:15px;
+    justify-content:space-evenly;
+    align-items:flex-start;
+}
+.ramme-omoss{
+    display:flex;
+    justify-content: space-evenly;
+    align-items:stretch;
+    padding:15px;
+    gap:10px;
+  }
+.EClogo{
+    width:250px; 
+    height:250px;
+    display:block;
+    margin-left:auto;
+    margin-right:50px;
+    margin-top:0px;
+}
+img.overskrift-omoss{
+    margin:0 auto;
+    display:block;
+    width:500px;
+    height:100px;
+}
+
+/*Galleri*/
+img.galleri{
+    width:600px;
+   height:450px;
+   display:block;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top:20px;
+}
+.galleri{
+   color: white;
+   font-size:48px;
+   text-align:center;
+   font-family: Courier, monospace;
+	font-style: bold;
+}
+.g-arkade{
+   width:400px;
+   height:500px;
+   display:block;
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:20px;
+}
+img.overskrift-galleri{
+   margin:0 auto;
+   display:block;
+   width:500px;
+   height:100px;
+}
+
+/*Meny-*/
+	/*Middag*/
+.innhold_middag {
+  display: flex;
+  gap: 20px;
+}
+.meny-middag-boks, .meny-middag-boks2 {
+    border: 2px solid rgb(253, 253, 253);
+    padding: 10px;
+}
+.meny-middag-boks td, .meny-middag-boks th, .meny-middag-boks2 td, .meny-middag-boks2 th {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 10px
+}
+.meny-middag .innhold {
+    display: flex;
+    justify-content: space-around;
+}
+.meny-middag table {
+    width: 50%; 
+    border-collapse: collapse; 
+  }
+.meny-middag h1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    color: white;
+    font-style: bold;
+    padding: 15px;
+  }
+.overskriftMeny{
+  display:flex;
+  align-items: baseline;
+  justify-content: center;
+  color:white;
+  gap: 16px;
+}
+.overskriftMeny > span {
+  margin: 0; 
+  padding: 0;
+}
+.overskriftMeny > h1 {
+  margin: 0;
+  padding: 0;
+}
+.overskrift_og_bilde {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  font-family: Courier, monospace;
+	font-style: bold;
+}
+.overskrift_og_bilde img {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  margin-top: -15px;
+}
+	/*Barnemeny Og tilbehør*/
+.bot-overskrift{
+	display: flex;
+	
+	justify-content: space-evenly;
+	align-items: flex-start;
+	
+	color: white;
+	font-family: Courier, monospace;
+	font-style: bold;
+	padding: 15px;	
+}
+.bot-bilde1 {
+	
+	padding: 15px;
+}
+.bot-bilde2{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.menybarntilbehør-bokser{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	
+	color: white;
+	padding: 30px;
+}
+.bot-boks1{
+	border-style: solid;
+	border-color: white;
+	line-height: 6px;
+	
+	padding: 16px;
+}
+.bot-boks2{
+	border-style: solid;
+	border-color: white;
+	line-height: 6px;
+	font-size: 15px;
+	padding: 10px;
+}
+	/*Lunsj*/
+.L-menu-container {
+    padding: 20px;
+    max-width: 100%;
+}
+.overskrift_og_bilde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+.overskrift_og_bilde img {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    margin-top: -15px;
+}
+.overskriftMeny, .L-menu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    padding: 15px;
+    font-size: 2.5em;
+}
+.L-menu-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.L-menu-section {
+    border: 2px solid #fff;
+    padding: 10px;
+    width: 48%;
+}
+.menu-section h2 {
+    font-size: x-large;
+    text-decoration: underline;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li, .L-price {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.L-price {
+    float: right;
+}
+.sandwich-image {
+    position: absolute;
+    bottom: 10px;
+    right: 150px;
+    width: 100px;
+    height: auto;
+}
+	/*Dessert*/
+.D-flex-container {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+}
+.D-flex-item {
+    flex: 1; 
+    margin: 10px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    min-width: 200px; 
+}
+.D-h1 {
+    text-align: center;
+    color: white;
+    margin: 10px 0 0;
+    font-family: "Courier New", Courier, monospace; 
+    font-weight: bold; 
+}
+.logo {
+    display: block;
+    margin: 0 auto; 
+    width: 280px; 
+    height: 70px; 
+}
+.D-h2 {
+    text-align: center;
+    margin-top: 0; 
+    font-family: "Courier New", Courier, monospace; 
+    font-weight: bold; 
+    text-decoration: underline;
+    text-decoration-color: white; 
+    text-decoration-thickness: 2px; 
+}
+.D-h3 {
+    text-align: left;
+    margin-top: 0;
+    font-family: "Courier New", Courier, monospace; 
+    font-weight: bold; 
+}
+li, D-flex-item {
+    margin-bottom: 10px; 
+}
+small {
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+    display: block; 
+}	
+	/*Drikkemeny*/
+.tittel{
+	display: flex;
+	justify-content: center;
+	
+	font-family: Courier;
+	font-style: bold;
+	font-size: 45px;
+	color: white;
+}
+.drikke-bilde {
+	display: flex;
+	justify-content: center;
+}
+.drikkemeny {
+	display: flex;
+	justify-content: center;
+	Column-gap: 20px;
+	padding: 50px;
+	align-items: center; 
+}
+.DM-boks1, .DM-boks2, .DM-boks3, .DM-boks4 {
+	color: white;
+	text-decoration: none;
+	border-style: solid;
+	border-color: white;
+	
+	font-size: 20px;
+	
+	line-height: 1;
+	width: 250px;
+	height: 250px;
+	padding: 30px;
+}
+.topping {
+	display: flex;
+	justify-content: center;
+	color: white;
+	
+}
+.alkohol {
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+/*Booking*/
+/*not adding this*/
+
+/*Arkade*/
+.arkade-body {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+	min-height:100vh;
+}
+.arkade-flex-container {
+    display:flex;
+    flex-direction:column; 
+    align-items:center; 
+    gap:10px;
+}
+.arkade-header {
+	font-family:Courier, monospace;
+	font-style:bold;
+    padding:1px;
+    font-size:55px;
+    margin:0; 
+	text-align:center;
+}
+.arkade-overskriftliner {
+    width:500px; 
+    height:auto;
+}
+.arkade-h2 {
+    padding:5px;
+    font-size:24px; 
+    text-align:center;
+}
+.box-border-box p {
+	margin-top:5px;
+	display:flex;
+	justify-content:center;
+	align-items:center; 
+}
+.arkade-box h3{
+	margin-top:5px;
+	display:flex;
+	justify-content:center;
+	align-items:center; 
+}
+.arkade-container {
+  display:flex;
+  gap:20px; 
+  justify-content:center; 
+}
+.box-border-box {
+  padding:10px;
+  box-sizing:content-box;
+}
+.nr1{
+	border:2px solid magenta;
+	width:300px;
+}
+.nr2{
+	border:2px solid green;
+	width:200px;
+}
+.nr3{
+	border:2px solid yellow;
+	width:300px;
+}
+.arkade-åpningstider p{
+    text-align:center;
+	margin-top:20px;
+}
+
+/*Kontakt Oss*/
+.KO-header {
+	font-size: 24px;
+	font-family: Courier, monospace;
+	font-style: bold;
+	color: white;
+	text-align: center;
+}
+.KO-borderpic img {
+	width:500px;
+	height:110px;
+	top: 65px;
+	position:absolute;
+}
+.KO-borderpic {
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+}
+.KO-box {
+	justify-content: absolute;
+	margin: auto;
+	width: 80%;
+	height: 80%;
+	padding-top:25px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-style: solid;
+	color: white;
+	font-size: 20px;
+}
+.map{
+	
+	right: 150px;
+	top: 260px;
+	position:absolute;
+}
+
+.Tilbake{
+	font-family: Courier, monospace;
+	font-style: bold;
+	
+	text-decoration: none; 
+    color: inherit; 
+}
