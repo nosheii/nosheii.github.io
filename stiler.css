@@ -8,7 +8,7 @@
 .navbar a {
     color: #623e2a;
     text-decoration: none;
-    font-family: "cocogothic", sans-serif;
+    font-family: "CocoGothicLight", Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
     margin: 0 15px;
@@ -16,10 +16,10 @@
 }
 
 .navbar a:hover {
-    color: #90caf9;
+    color: #000000;
 }
 
 @font-face {
-    font-family:"CocoGothic";
-    src: url("./cocogothic.ttf");
+    font-family:"CocoGothicLight";
+    src: url("./cocogothic/CocoGothic_trial.ttf") format("truetype");
 }
