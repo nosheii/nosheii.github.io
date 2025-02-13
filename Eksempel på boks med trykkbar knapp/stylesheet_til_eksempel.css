@@ -20,14 +20,14 @@
     transform: scale(1.2);
 }
 
-.om_oss_link {
+.forside_link {
     text-decoration: none;
     color: #ece3bb;
     font-weight: bold;
     transition: color 0.2s ease-in-out;
 }
 
-.om_oss_link:hover {
+.forside_link:hover {
     color:rgb(43, 106, 61)
 
 }
