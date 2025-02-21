@@ -23,3 +23,108 @@
     font-family:"CocoGothicLight";
     src: url("./Fonts/cocogothic/CocoGothic_trial.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: 'CatchyMager';
+    src: url('/Fonts/catchymager.ttf') format('truetype');
+}
+
+.footer {
+    background-color: #623e2a; 
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer h2 {
+    text-decoration: none;
+    font-family: "CatchyMager";
+    font-weight: lighter;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    text-decoration: none;
+    font-family: "CocoGothic", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    min-height: 150px; 
+    position: relative; 
+}
+
+.footer-box:first-child { /* Applying only to the first column */
+    text-align: left;
+    padding-left: 15px; 
+}
+
+.footer-box:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+.footer-box:nth-child(2) p {
+    margin-top: 60px; 
+}
+
+.footer-box h3 {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 22px;
+    text-align: left;
+    text-decoration: none;
+    font-family: "CocoGothic";
+    font-weight: normal;
+}
+
+.footer-box p {
+    text-decoration: none;
+    font-family: "CocoGothic";
+    font-weight: 500;
+    font-size: 14px;
+    margin: 5px 0;
+    margin-bottom: 20px;
+}
+
+
+.tag-button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 14px 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.tag-button:hover {
+    background: white;
+    color: #5C2C14;
+}
