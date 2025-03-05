@@ -3,6 +3,8 @@
     justify-content: center;
     background-color: #efebe5;
     padding: 10px;
+    position: sticky;
+    top: 0px;
 }
 
 .navbar a {
@@ -21,7 +23,7 @@
 
 @font-face {
     font-family:"CocoGothicLight";
-    src: url("./Fonts/cocogothic/CocoGothic_trial.ttf") format("truetype");
+    src: url("./Fonts/cocogothic/CocoGothic_trial.woff2") format("woff2");
 }
 
 @font-face {
@@ -47,6 +49,7 @@
 .footer p {
     text-decoration: none;
     font-family: "CocoGothic", Arial, Helvetica, sans-serif;
+    font-variant-numeric: Arial, sans-serif;
     font-weight: normal;
     max-width: 800px;
     margin: 0 auto 20px;
