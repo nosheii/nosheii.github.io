@@ -1,3 +1,4 @@
+/* Her starter header */
 .navbar {
     display: flex;
     justify-content: center;
@@ -30,6 +31,10 @@
     font-family: 'CatchyMager';
     src: url('/Fonts/catchymager.ttf') format('truetype');
 }
+
+/* Her slutter header */
+
+/* Her starter footer */
 
 .footer {
     background-color: #623e2a; 
@@ -132,7 +137,9 @@
     color: #5C2C14;
 }
 
-/* CSS til login side*/
+/* Her slutter footer */
+
+/* Her starter Log in*/
 
 .login__boks {
     background-color:#e7dbcb;
@@ -184,3 +191,5 @@
 .login__signup__button:hover  {
     border: 2px solid #623e2a;
 }
+
+/* Her slutter Log in*/
