@@ -223,18 +223,19 @@
 .top__destinations {
     text-align: center;
     padding: 50px 20px;
+    background-color: #f4f1ed;
 }
 
 .top-destinations__title {
     font-size: 32px;
     color: #623e2a;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .top-destinations__container {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
     flex-wrap: wrap;
     align-items: stretch;
 }
@@ -245,7 +246,6 @@
     flex-direction: column;
     align-items: center;
     width: 350px;
-    gap: 20px;
 }
 
 .top-destinations__image-container {
@@ -264,22 +264,18 @@
 }
 
 .top-destinations__card {
-    background: white;
+    background: #f4f1ed;
     border: 2px solid #8b6f5c;
-    border-radius: 0px;
     padding: 20px;
-    width: 100%;
     text-align: left;
-    box-shadow: none;
-    height: 150px;
+    min-height: 180px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .top-destinations__name {
-    font-size: 18px;
+    font-size: 20px;
     color: #623e2a;
     margin-bottom: 5px;
 }
