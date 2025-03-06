@@ -20,6 +20,20 @@
 .navbar a:hover {
     color: #000000;
 }
+/* Her kommer bakgrunnen på toppen */
+
+.topp__bakgrunn {
+    background-image: url("bilde.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 300px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 0; /*sender bilde bak alt det andre */
+}
+
 
 @font-face {
     font-family:"CocoGothicLight";
