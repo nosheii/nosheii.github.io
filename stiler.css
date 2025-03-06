@@ -155,8 +155,12 @@
     width: 225px; 
     padding: 10px; 
     margin: 5px 0; 
+    outline: none;
 }
 
+.login__enter:focus {
+    border: 2px solid #623e2a;
+}
 .login__button{
     background-color: #623e2a;
     color: white;
@@ -177,3 +181,6 @@
     margin: px 0; 
 }
 
+.login__signup__button:hover  {
+    border: 2px solid #623e2a;
+}
