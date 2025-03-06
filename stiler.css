@@ -231,6 +231,8 @@
     color: #623e2a;
     font-size: 32px;
     margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 .top-destinations__container {
@@ -249,7 +251,7 @@
     text-align: left;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     position: relative;
-    padding-top: 80px;
+    margin-top: 60px;
 }
 
 .top-destinations__image {
@@ -258,7 +260,7 @@
     object-fit: cover;
     border-radius: 10px;
     position:absolute;
-    top: -80px;
+    top: -60px;
     left: 0;
 }
 
