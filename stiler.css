@@ -133,7 +133,22 @@
 }
 
 /* CSS til login side*/
+.login__container {
+    display: flex;
+    flex-direction: row;
+}
+.login__bilde {
+    width: 800px;
+    border-radius:20px;
+}
 
+.login__helloyou {
+    color: black;
+    position: absolute; /* Legg til absolutt posisjonering */
+    top: 10%; /* Plasserer boksen nær toppen */
+    left: 10%; /* Plasserer boksen nær venstre kant */
+    transform: translate(0, 0); /* Ingen justering nødvendig */
+}
 .login__boks {
     background-color:#e7dbcb;
     color: #5C2C14;
@@ -146,6 +161,9 @@
     align-items: center; 
     width: 350px;
     height:400px;
+    top: 50%; /* Plasserer boksen midt på høyden */
+    left: 70%; /* Plasserer boksen på høyre halvdel */
+    transform: translate(-105%, +10%); /* Justerer for sentrering */
 }
 
 .login__enter {
@@ -184,3 +202,4 @@
 .login__signup__button:hover  {
     border: 2px solid #623e2a;
 }
+
