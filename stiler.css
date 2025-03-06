@@ -285,3 +285,226 @@
     color: #5a4d44;
     line-height: 1.4;
 }
+
+/* BEGINNING FOR THE "RENT OUT YOUR HOUSE" */
+
+/* Global reset inside */
+.rent-out-home * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container */
+  .rent-out-home {
+    font-family: 'DM Sans', sans-serif;
+    color: #623e2a;
+    background-color: #f4f1ed;
+    padding: 20px;
+  }
+  
+  /* Container for content */
+  .rent-out-home__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f1ed;
+  }
+  
+  /* Title */
+  .rent-out-home__container h1 {
+    font-family: 'CatchyMager', sans-serif;
+    font-size: 38px;
+    color: #623e2a;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Main block for collumns */
+  .rent-out-home__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  /* Left collumn (users inputs) */
+  .rent-out-home__left {
+    flex: 1 1 300px;
+    margin-left: 20px;
+  }
+  
+  /* Right collumn (upload image + button) */
+  .rent-out-home__right {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  /* Form strings (other fields) */
+  .rent-out-home__form_row {
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #623e2a;
+    padding: 6px 0;
+    margin-bottom: 6px;
+  }
+  .rent-out-home__form_row label {
+    width: 130px;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  .rent-out-home__form_row input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: #e9ded4;
+    color: rgba(98, 62, 42, 0.9);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  /* Select with an arrow in the left */
+  .rent-out-home__select_arrow_left {
+    position: relative;
+    flex: 1;
+    display: flex;
+  }
+  .rent-out-home__select_arrow_left::before {
+    content: "▼";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #623e2a;
+    font-size: 30px;
+    pointer-events: none;
+  }
+  .rent-out-home__select_arrow_left select {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: #e9ded4;
+    color: rgba(98, 62, 42, 0.9);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    padding-left: 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    appearance: none;
+    text-align: center;
+    text-align-last: center;
+  }
+  
+  /* Placeholder for input */
+  .rent-out-home__form_row input[type="text"]::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(98, 62, 42, 0.5);
+  }
+  
+  /* Icons (Facilities) */
+  .rent-out-home__facilities_block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .rent-out-home__facilities_title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .rent-out-home__facilities_icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .rent-out-home__facility_item {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .rent-out-home__facility_item input[type="checkbox"] {
+    display: none;
+  }
+  .rent-out-home__icon_img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: background-color 0.3s, border 0.3s;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #f4f1ed;
+  }
+  .rent-out-home__facility_item:hover .rent-out-home__icon_img {
+    background-color: #e6ded4;
+  }
+  .rent-out-home__facility_item input[type="checkbox"]:checked + .rent-out-home__icon_img {
+    background-color: #fff;
+    border-color: #623e2a;
+  }
+  
+  /* Image-preview */
+  .rent-out-home__photo_container {
+    width: 470px;
+    height: 470px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .rent-out-home__photo_container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+  .rent-out-home__camera_icon {
+    width: 100px;
+    height: 100px;
+    background: url('https://cdn-icons-png.flaticon.com/512/151/151773.png') center/cover no-repeat;
+  }
+  .rent-out-home__insert_text {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  /* Hidden input for photo */
+  #rent-out-home__imageInput {
+    display: none;
+  }
+  
+  /* Button "Publish listing" */
+  .rent-out-home__publish_btn {
+    background-color: #5c3b28;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+    width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  .rent-out-home__publish_btn:hover {
+    background-color: #4b2f1e;
+  }
+  
+/* END FOR THE "RENT OUT YOUR HOUSE". For now ;) */ 
