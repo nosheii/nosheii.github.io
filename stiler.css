@@ -21,19 +21,20 @@
     color: #000000;
 }
 /* Her kommer bakgrunnen på toppen */
-
-.topp__bakgrunn {
-    background-image: url("bilde.jpg");
+.forside_bilde {
+    background-image: url("bilder/bakgrunn.png");
     background-size: cover;
-    background-position: top;
-    height: 300px;
+    background-position: center;
     width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 0; /*sender bilde bak alt det andre */
+    height: 400px;  /* Make sure there’s a height */
 }
 
+
+.forside_bilde {
+    background-image: url("bilder/bakgrunn.png");
+    background-size:cover ;
+    background-position: top;
+}
 
 @font-face {
     font-family:"CocoGothicLight";
