@@ -29,14 +29,14 @@
     object-fit: cover;
 }
 
-/*Forside tekst for "Find your stay*/
-/* Forside_hero for å kunne få teksten i midten av bilde*/
+/* Forside_hero for å kunne få teksten i midten av forside bilde*/
 .forside_hero {
     position: relative;
     text-align: center;
     color: white;
 }
 
+/*Forside tekst for "Find your stay"*/
 .find_stay {
     font-size: large;
     text-transform:uppercase;
@@ -48,7 +48,7 @@
     letter-spacing: 3px;  /* mellomrom mellom tekst*/
 }
 
-/*Her kommer toppteksten for Home&Rentals*/
+/*Forside tekst for "Home&Rentals"*/
 .home_rentals {
     font-size: 45px;
     position: absolute;
