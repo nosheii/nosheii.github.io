@@ -1,6 +1,135 @@
 <!DOCTYPE html>
-<html>
-    <header>
-        Her er rent your home
-    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rent Your Home</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" 
+    rel="stylesheet"
+  >
+  <style>
+    @font-face {
+      font-family: 'CatchyMager';
+      src: url('/Fonts/catchymager.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+  <link rel="stylesheet" href="stiler.css">
+
+</head>
+<body>
+  <div class="rent-out-home">
+    <div class="rent-out-home__container">
+      <h1>Start renting out your home</h1>
+      <div class="rent-out-home__content">
+      
+        <!-- Left collumn (form) -->
+        <div class="rent-out-home__left">
+          <div class="rent-out-home__form_row">
+            <label for="rent-out-home__address">Property address:</label>
+            <input type="text" id="rent-out-home__address" placeholder="12 Address, 1234 Place, Norway">
+          </div>
+          
+          <div class="rent-out-home__form_row">
+            <label for="rent-out-home__property-type">Property type:</label>
+            <div class="rent-out-home__select_arrow_left">
+              <select id="rent-out-home__property-type">
+                <option>House</option>
+                <option>Apartment</option>
+                <option>Condo</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="rent-out-home__form_row">
+            <label for="rent-out-home__bedrooms">Bedrooms:</label>
+            <div class="rent-out-home__select_arrow_left">
+              <select id="rent-out-home__bedrooms">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4+</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="rent-out-home__form_row">
+            <label for="rent-out-home__beds">Beds:</label>
+            <div class="rent-out-home__select_arrow_left">
+              <select id="rent-out-home__beds">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4+</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="rent-out-home__form_row">
+            <label for="rent-out-home__guest-limit">Guest limit:</label>
+            <div class="rent-out-home__select_arrow_left">
+              <select id="rent-out-home__guest-limit">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4+</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="rent-out-home__form_row">
+            <label for="rent-out-home__bathrooms">Bathrooms:</label>
+            <div class="rent-out-home__select_arrow_left">
+              <select id="rent-out-home__bathrooms">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4+</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right form (image and button under it) -->
+        <div class="rent-out-home__right">
+          <div class="rent-out-home__photo_container" onclick="document.getElementById('rent-out-home__imageInput').click()">
+            <img id="rent-out-home__previewImage" alt="Preview">
+            <div class="rent-out-home__camera_icon" id="rent-out-home__cameraIcon"></div>
+            <div class="rent-out-home__insert_text">Insert your images +</div>
+          </div>
+          <input type="file" id="rent-out-home__imageInput" accept="image/*" multiple>
+          <button class="rent-out-home__publish_btn">Publish listing</button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  
+  <!-- REAL PROGRAMMING YOOOOO. JavaScript for image -->
+  <script>
+    const imageInput = document.getElementById('rent-out-home__imageInput');
+    const previewImage = document.getElementById('rent-out-home__previewImage');
+    const cameraIcon = document.getElementById('rent-out-home__cameraIcon');
+
+    imageInput.addEventListener('change', function(event) {
+      const files = event.target.files;
+      if (files && files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          previewImage.src = e.target.result;
+          previewImage.style.display = 'block';
+          cameraIcon.style.display = 'none';
+        };
+        reader.readAsDataURL(files[0]);
+      } else {
+        previewImage.style.display = 'none';
+        cameraIcon.style.display = 'block';
+      }
+    });
+  </script>
+</body>
 </html>
