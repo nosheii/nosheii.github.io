@@ -134,16 +134,18 @@
 
 /* CSS til login side*/
 
-.login {
+.login__boks {
     background-color:#e7dbcb;
     color: #5C2C14;
     padding: 20px;
-    border-radius: 10px; 
+    border-radius: 50px; 
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center; 
+    width: 350px;
+    height:400px;
 }
 
 .login__enter {
@@ -165,7 +167,7 @@
     margin: 5px 0; 
 }
 
-.signup__button {
+.login__signup__button {
     background-color: #efebe5;
     color:gray;
     border-radius: 10px;
@@ -174,3 +176,4 @@
     padding: 10px; 
     margin: px 0; 
 }
+
