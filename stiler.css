@@ -1,6 +1,7 @@
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: #efebe5;
     padding: 10px;
     position: sticky;
@@ -20,6 +21,39 @@
 .navbar a:hover {
     color: #000000;
 }
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 60px;
+  margin-right:1px;
+  margin-top:-10px;
+}
+
+.nav_vertical { /* Her styler jeg de 3 siste knappene */
+  display:flex;
+  flex-direction: column; /*gjør at de går "nedover*/
+  align-items: center;
+  gap: 5px;
+}
+
+.nav_button, .nav_button_rent {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #623e2a;
+  background-color: transparent;
+  color: #623e2a;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor:pointer
+}
+
+.nav_button_rent {
+  background-color: #623e2a;
+  color: white;
+}
+
 /* Her kommer bakgrunnen på toppen */
 .forside_bilde {
     max-width:100%;
