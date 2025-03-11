@@ -22,32 +22,32 @@
 
 </head>
 <body>
-  <div class="rent-out-home">
-    <div class="rent-out-home__container">
+  <div class="rent_out_home">
+    <div class="rent_out_home__container">
       <h1>Start renting out your home</h1>
-      <div class="rent-out-home__content">
-        <div class="rent-out-home__name_rental_oval">
-          <label for="rent-out-home__rental-name" class="rent-out-home__name_rental_label">
+      <div class="rent_out_home__content">
+        <div class="rent_out_home__name_rental_oval">
+          <label for="rent_out_home__rental_name" class="rent_out_home__name_rental_label">
             Name your rental:
           </label>
           <input 
             type="text" 
-            id="rent-out-home__rental-name" 
-            class="rent-out-home__name_rental_input" 
+            id="rent_out_home__rental_name" 
+            class="rent_out_home__name_rental_input" 
             placeholder="Give your place a title"
           >
         </div>
         <!-- Left collumn (form) -->
-        <div class="rent-out-home__left">
-          <div class="rent-out-home__form_row">
-            <label for="rent-out-home__address">Property address:</label>
-            <input type="text" id="rent-out-home__address" placeholder="12 Address, 1234 Place, Norway">
+        <div class="rent_out_home__left">
+          <div class="rent_out_home__form_row">
+            <label for="rent_out_home__address">Property address:</label>
+            <input type="text" id="rent_out_home__address" placeholder="12 Address, 1234 Place, Norway">
           </div>
           
-          <div class="rent-out-home__form_row">
-            <label for="rent-out-home__property-type">Property type:</label>
-            <div class="rent-out-home__select_arrow_left">
-              <select id="rent-out-home__property-type">
+          <div class="rent_out_home__form_row">
+            <label for="rent_out_home__property_type">Property type:</label>
+            <div class="rent_out_home__select_arrow_left">
+              <select id="rent_out_home__property_type">
                 <option>House</option>
                 <option>Apartment</option>
                 <option>Condo</option>
@@ -55,10 +55,10 @@
             </div>
           </div>
           
-          <div class="rent-out-home__form_row">
-            <label for="rent-out-home__bedrooms">Bedrooms:</label>
-            <div class="rent-out-home__select_arrow_left">
-              <select id="rent-out-home__bedrooms">
+          <div class="rent_out_home__form_row">
+            <label for="rent_out_home__bedrooms">Bedrooms:</label>
+            <div class="rent_out_home__select_arrow_left">
+              <select id="rent_out_home__bedrooms">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -67,10 +67,10 @@
             </div>
           </div>
           
-          <div class="rent-out-home__form_row">
-            <label for="rent-out-home__beds">Beds:</label>
-            <div class="rent-out-home__select_arrow_left">
-              <select id="rent-out-home__beds">
+          <div class="rent_out_home__form_row">
+            <label for="rent_out_home__beds">Beds:</label>
+            <div class="rent_out_home__select_arrow_left">
+              <select id="rent_out_home__beds">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -79,10 +79,10 @@
             </div>
           </div>
           
-          <div class="rent-out-home__form_row">
-            <label for="rent-out-home__guest-limit">Guest limit:</label>
-            <div class="rent-out-home__select_arrow_left">
-              <select id="rent-out-home__guest-limit">
+          <div class="rent_out_home__form_row">
+            <label for="rent_out_home__guest_limit">Guest limit:</label>
+            <div class="rent_out_home__select_arrow_left">
+              <select id="rent_out_home__guest_limit">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -91,28 +91,79 @@
             </div>
           </div>
           
-          <div class="rent-out-home__form_row">
-            <label for="rent-out-home__bathrooms">Bathrooms:</label>
-            <div class="rent-out-home__select_arrow_left">
-              <select id="rent-out-home__bathrooms">
+          <div class="rent_out_home__form_row">
+            <label for="rent_out_home__bathrooms">Bathrooms:</label>
+            <div class="rent_out_home__select_arrow_left">
+              <select id="rent_out_home__bathrooms">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
                 <option>4+</option>
               </select>
+            </div>
+          </div>
+
+          <!-- Icons (Facilities) -->
+          <div class="rent_out_home__facilities_block">
+            <p class="rent_out_home__facilities_title">Click on relevant facilities:</p>
+            <div class="rent_out_home__facilities_icons">
+              <label class="rent_out_home__facility_item">
+                <input type="checkbox" name="facilities" value="wifi">
+                <img src="icons/wifi.png" alt="Wi-Fi" class="rent_out_home__icon_img">
+              </label>
+              <label class="rent_out_home__facility_item">
+                <input type="checkbox" name="facilities" value="tv">
+                <img src="icons/TV.png" alt="TV" class="rent_out_home__icon_img">
+              </label>
+              <label class="rent_out_home__facility_item">
+                <input type="checkbox" name="facilities" value="parking">
+                <img src="icons/Parking.png" alt="Parking" class="rent_out_home__icon_img">
+              </label>
+              <label class="rent_out_home__facility_item">
+                <input type="checkbox" name="facilities" value="heating">
+                <img src="icons/Heating.png" alt="Heating" class="rent_out_home__icon_img">
+              </label>
+              <label class="rent_out_home__facility_item">
+                <input type="checkbox" name="facilities" value="pets">
+                <img src="icons/pets.png" alt="pets" class="rent_out_home__icon_img">
+              </label>
+              <label class="rent_out_home__facility_item">
+                <input type="checkbox" name="facilities" value="hairdryer">
+                <img src="icons/hairdryer.png" alt="hairdryer" class="rent_out_home__icon_img">
+              </label>
+              <label class="rent_out_home__facility_item">
+                <input type="checkbox" name="facilities" value="washingmachine">
+                <img src="icons/washingmachine.png" alt="Washing Machine" class="rent_out_home__icon_img">
+              </label>
+              <label class="rent_out_home__facility_item">
+                <input type="checkbox" name="facilities" value="dryer">
+                <img src="icons/dryer.png" alt="Dryer" class="rent_out_home__icon_img">
+              </label>
+              <label class="rent_out_home__facility_item">
+                <input type="checkbox" name="facilities" value="pool">
+                <img src="icons/pool.png" alt="Pool" class="rent_out_home__icon_img">
+              </label>
+              <label class="rent_out_home__facility_item">
+                <input type="checkbox" name="facilities" value="kitchen">
+                <img src="icons/kitchen.png" alt="kitchen" class="rent_out_home__icon_img">
+              </label>
+              <label class="rent_out_home__facility_item">
+                <input type="checkbox" name="facilities" value="iron">
+                <img src="icons/iron.png" alt="Iron" class="rent_out_home__icon_img">
+              </label>
             </div>
           </div>
         </div>
         
         <!-- Right form (image and button under it) -->
-        <div class="rent-out-home__right">
-          <div class="rent-out-home__photo_container" onclick="document.getElementById('rent-out-home__imageInput').click()">
-            <img id="rent-out-home__previewImage" alt="Preview">
-            <div class="rent-out-home__camera_icon" id="rent-out-home__cameraIcon"></div>
-            <div class="rent-out-home__insert_text">Insert your images +</div>
+        <div class="rent_out_home__right">
+          <div class="rent_out_home__photo_container" onclick="document.getElementById('rent_out_home__imageInput').click()">
+            <img id="rent_out_home__previewImage" alt="Preview">
+            <div class="rent_out_home__camera_icon" id="rent_out_home__cameraIcon"></div>
+            <div class="rent_out_home__insert_text">Insert your images +</div>
           </div>
-          <input type="file" id="rent-out-home__imageInput" accept="image/*" multiple>
-          <button class="rent-out-home__publish_btn">Publish listing</button>
+          <input type="file" id="rent_out_home__imageInput" accept="image/*" multiple>
+          <button class="rent_out_home__publish_btn">Publish listing</button>
         </div>
       
       </div>
@@ -121,9 +172,9 @@
   
   <!-- REAL PROGRAMMING YOOOOO. JavaScript for image -->
   <script>
-    const imageInput = document.getElementById('rent-out-home__imageInput');
-    const previewImage = document.getElementById('rent-out-home__previewImage');
-    const cameraIcon = document.getElementById('rent-out-home__cameraIcon');
+    const imageInput = document.getElementById('rent_out_home__imageInput');
+    const previewImage = document.getElementById('rent_out_home__previewImage');
+    const cameraIcon = document.getElementById('rent_out_home__cameraIcon');
 
     imageInput.addEventListener('change', function(event) {
       const files = event.target.files;
