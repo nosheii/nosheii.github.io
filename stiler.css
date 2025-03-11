@@ -222,10 +222,11 @@ html {
 .login__helloyou {
     color: black;
     position: absolute; /* Legg til absolutt posisjonering */
-    top: 10%; /* Plasserer boksen nær toppen */
+    top: 1%; /* Plasserer boksen nær toppen */
     left: 10%; /* Plasserer boksen nær venstre kant */
     transform: translate(0, 0); /* Ingen justering nødvendig */
-    font-family:'Times New Roman', Times, serif
+    font-family: 'Brush Script MT', cursive;
+    font-size: 60px;
 }
 .login__boks {
     background-color:#e7dbcb;
@@ -241,7 +242,7 @@ html {
     height:400px;
     top: 50%; /* Plasserer boksen midt på høyden */
     left: 70%; /* Plasserer boksen på høyre halvdel */
-    transform: translate(-30%, +10%); /* Justerer for sentrering */
+    transform: translate(-60%, +10%); /* Justerer for sentrering */
 }
 
 .login__enter {
