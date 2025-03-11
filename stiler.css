@@ -38,7 +38,14 @@ html {
   display:flex;
   flex-direction: column; /*gjør at de går "nedover*/
   align-items: center;
-  gap: 5px;
+}
+
+.nav_logsign {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: -10px;
+  margin-bottom: 5px;
 }
 
 .nav_button, .nav_button_rent {
@@ -49,12 +56,14 @@ html {
   color: #623e2a;
   font-weight: bold;
   border-radius: 5px;
-  cursor:pointer
+  cursor:pointer;
+  text-align: center;
 }
 
 .nav_button_rent {
   background-color: #623e2a;
-  color: white;
+  color: white !important;
+  border:none;
 }
 
 /* Her kommer bakgrunnen på toppen */
