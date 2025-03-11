@@ -413,7 +413,33 @@ html {
     align-items: center;
     justify-content: flex-start;
   }
-  
+  /* Oval thing on the top */
+  .rent-out-home__name_rental_oval {
+    width: 100%;              
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    background-color: #e9ded4;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+
+  .rent-out-home__name_rental_label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+  .rent-out-home__name_rental_input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    color: #623e2a;
+    width: 250px;
+    text-align: left;
+  }
   /* Form strings (other fields) */
   .rent-out-home__form_row {
     display: flex;
@@ -477,7 +503,7 @@ html {
   }
   
   /* Placeholder for input */
-  .rent-out-home__form_row input[type="text"]::placeholder {
+  .rent-out-home__form_row input[type="text"]::placeholder, .rent-out-home__name_rental_input::placeholder {
     font-size: 18px;
     font-weight: 400;
     color: rgba(98, 62, 42, 0.5);
