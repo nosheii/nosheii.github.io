@@ -1,6 +1,10 @@
+html {
+    background-color: f4f1ed;
+}
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: #efebe5;
     padding: 10px;
     position: sticky;
@@ -19,6 +23,87 @@
 
 .navbar a:hover {
     color: #000000;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 60px;
+  margin-right:1px;
+  margin-top:-10px;
+}
+
+.nav_vertical { /* Her styler jeg de 3 siste knappene */
+  display:flex;
+  flex-direction: column; /*gjør at de går "nedover*/
+  align-items: center;
+}
+
+.nav_logsign {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: -10px;
+  margin-bottom: 5px;
+}
+
+.nav_button, .nav_button_rent {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #623e2a;
+  background-color: transparent;
+  color: #623e2a;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor:pointer;
+  text-align: center;
+}
+
+.nav_button_rent {
+  background-color: #623e2a;
+  color: white !important;
+  border:none;
+}
+
+/* Her kommer bakgrunnen på toppen */
+.forside_bilde {
+    max-width:100%;
+    max-height:500px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Forside_hero for å kunne få teksten i midten av forside bilde*/
+.forside_hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/*Forside tekst for "Find your stay"*/
+.find_stay {
+    font-size: large;
+    text-transform:uppercase;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*noe rare greier*/
+    line-height: 14px;
+    letter-spacing: 3px;  /* mellomrom mellom tekst*/
+}
+
+/*Forside tekst for "Home&Rentals"*/
+.home_rentals {
+    font-size: 45px;
+    position: absolute;
+    position: absolute;
+    top: 35%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap; /*gjør at teksten ikke breaker */
+
 }
 
 @font-face {
@@ -131,3 +216,393 @@
     background: white;
     color: #5C2C14;
 }
+
+/* CSS til login side*/
+
+.login__container {
+    display: flex;
+    flex-direction: row;
+}
+.login__bilde {
+    width: 800px;
+    border-radius:20px;
+}
+
+.login__helloyou {
+    color: black;
+    position: absolute; /* Legg til absolutt posisjonering */
+    top: 10%; /* Plasserer boksen nær toppen */
+    left: 10%; /* Plasserer boksen nær venstre kant */
+    transform: translate(0, 0); /* Ingen justering nødvendig */
+    font-family:'Times New Roman', Times, serif
+}
+.login__boks {
+    background-color:#e7dbcb;
+    color: #5C2C14;
+    padding: 20px;
+    border-radius: 50px; 
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 350px;
+    height:400px;
+    top: 50%; /* Plasserer boksen midt på høyden */
+    left: 70%; /* Plasserer boksen på høyre halvdel */
+    transform: translate(-30%, +10%); /* Justerer for sentrering */
+}
+
+.login__enter {
+    background-color:#efebe5;
+    border-radius: 10px;
+    border: none;
+    width: 225px; 
+    padding: 10px; 
+    margin: 5px 0; 
+    outline: none;
+}
+
+.login__enter:focus {
+    border: 2px solid #623e2a;
+}
+.login__button{
+    background-color: #623e2a;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 245px; 
+    padding: 10px; 
+    margin: 5px 0; 
+}
+
+.login__signup__button {
+    background-color: #efebe5;
+    color:gray;
+    border-radius: 10px;
+    border: none;
+    width: 245px; 
+    padding: 10px; 
+    margin: px 0; 
+}
+
+.login__signup__button:hover  {
+    border: 2px solid #623e2a;
+}
+
+/* Her kommer css til top destinations */
+
+.top__destinations {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f1ed;
+}
+
+.top-destinations__title {
+    font-size: 32px;
+    color: #623e2a;
+    margin-bottom: 30px;
+}
+
+.top-destinations__container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+/* Wrapper for hvert kort + bilde */
+.top-destinations__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.top-destinations__image-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.top-destinations__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.top-destinations__card {
+    background: #f4f1ed;
+    border: 2px solid #8b6f5c;
+    padding: 20px;
+    text-align: left;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.top-destinations__name {
+    font-size: 20px;
+    color: #623e2a;
+    margin-bottom: 5px;
+}
+
+.top-destinations__description {
+    font-size: 14px;
+    color: #5a4d44;
+    line-height: 1.4;
+}
+
+/* BEGINNING FOR THE "RENT OUT YOUR HOUSE" */
+
+/* Global reset inside */
+.rent-out-home * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container */
+  .rent-out-home {
+    font-family: 'DM Sans', sans-serif;
+    color: #623e2a;
+    background-color: #f4f1ed;
+    padding: 20px;
+  }
+  
+  /* Container for content */
+  .rent-out-home__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f1ed;
+  }
+  
+  /* Title */
+  .rent-out-home__container h1 {
+    font-family: 'CatchyMager', sans-serif;
+    font-size: 38px;
+    color: #623e2a;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Main block for collumns */
+  .rent-out-home__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  /* Left collumn (users inputs) */
+  .rent-out-home__left {
+    flex: 1 1 300px;
+    margin-left: 20px;
+  }
+  
+  /* Right collumn (upload image + button) */
+  .rent-out-home__right {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  /* Oval thing on the top */
+  .rent-out-home__name_rental_oval {
+    width: 100%;              
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    background-color: #e9ded4;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+
+  .rent-out-home__name_rental_label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+  .rent-out-home__name_rental_input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    color: #623e2a;
+    width: 250px;
+    text-align: left;
+  }
+  /* Form strings (other fields) */
+  .rent-out-home__form_row {
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #623e2a;
+    padding: 6px 0;
+    margin-bottom: 6px;
+  }
+  .rent-out-home__form_row label {
+    width: 130px;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  .rent-out-home__form_row input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: #e9ded4;
+    color: rgba(98, 62, 42, 0.9);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  /* Select with an arrow in the left */
+  .rent-out-home__select_arrow_left {
+    position: relative;
+    flex: 1;
+    display: flex;
+  }
+  .rent-out-home__select_arrow_left::before {
+    content: "▼";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #623e2a;
+    font-size: 30px;
+    pointer-events: none;
+  }
+  .rent-out-home__select_arrow_left select {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: #e9ded4;
+    color: rgba(98, 62, 42, 0.9);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    padding-left: 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    appearance: none;
+    text-align: center;
+    text-align-last: center;
+  }
+  
+  /* Placeholder for input */
+  .rent-out-home__form_row input[type="text"]::placeholder, .rent-out-home__name_rental_input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(98, 62, 42, 0.5);
+  }
+  
+  /* Icons (Facilities) */
+  .rent-out-home__facilities_block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .rent-out-home__facilities_title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .rent-out-home__facilities_icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .rent-out-home__facility_item {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .rent-out-home__facility_item input[type="checkbox"] {
+    display: none;
+  }
+  .rent-out-home__icon_img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: background-color 0.3s, border 0.3s;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #f4f1ed;
+  }
+  .rent-out-home__facility_item:hover .rent-out-home__icon_img {
+    background-color: #e6ded4;
+  }
+  .rent-out-home__facility_item input[type="checkbox"]:checked + .rent-out-home__icon_img {
+    background-color: #fff;
+    border-color: #623e2a;
+  }
+  
+  /* Image-preview */
+  .rent-out-home__photo_container {
+    width: 470px;
+    height: 470px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .rent-out-home__photo_container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+  .rent-out-home__camera_icon {
+    width: 100px;
+    height: 100px;
+    background: url('https://cdn-icons-png.flaticon.com/512/151/151773.png') center/cover no-repeat;
+  }
+  .rent-out-home__insert_text {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  /* Hidden input for photo */
+  #rent-out-home__imageInput {
+    display: none;
+  }
+  
+  /* Button "Publish listing" */
+  .rent-out-home__publish_btn {
+    background-color: #5c3b28;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+    width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  .rent-out-home__publish_btn:hover {
+    background-color: #4b2f1e;
+  }
+  
+/* END FOR THE "RENT OUT YOUR HOUSE". For now ;) */ 
