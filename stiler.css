@@ -241,6 +241,7 @@ html {
     background-color:#e7dbcb;
     color: #5C2C14;
     padding: 20px;
+    padding-bottom: 40px;
     border-radius: 50px; 
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -248,9 +249,7 @@ html {
     flex-direction: column;
     align-items: center; 
     width: 350px;
-    height:400px;
-    top: 50%; /* Plasserer boksen midt på høyden */
-    left: 70%; /* Plasserer boksen på høyre halvdel */
+    height: fit-content;
     transform: translate(-60%, +10%); /* Justerer for sentrering */
 }
 
