@@ -541,10 +541,10 @@ html {
     padding: 6px;
     background-color: #f4f1ed;
   }
-  .rent_out_home__facility_item:hover .rent-out-home__icon_img {
+  .rent_out_home__facility_item:hover .rent_out_home__icon_img {
     background-color: #e6ded4;
   }
-  .rent_out_home__facility_item input[type="checkbox"]:checked + .rent-out-home__icon_img {
+  .rent_out_home__facility_item input[type="checkbox"]:checked + .rent_out_home__icon_img {
     background-color: #fff;
     border-color: #623e2a;
   }
