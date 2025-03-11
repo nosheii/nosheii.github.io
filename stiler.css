@@ -1,3 +1,6 @@
+html {
+    background-color: f4f1ed;
+}
 .navbar {
     display: flex;
     justify-content: center;
@@ -147,6 +150,7 @@
 }
 
 /* CSS til login side*/
+
 .login__container {
     display: flex;
     flex-direction: row;
@@ -162,6 +166,7 @@
     top: 10%; /* Plasserer boksen nær toppen */
     left: 10%; /* Plasserer boksen nær venstre kant */
     transform: translate(0, 0); /* Ingen justering nødvendig */
+    font-family:'Times New Roman', Times, serif
 }
 .login__boks {
     background-color:#e7dbcb;
@@ -177,7 +182,7 @@
     height:400px;
     top: 50%; /* Plasserer boksen midt på høyden */
     left: 70%; /* Plasserer boksen på høyre halvdel */
-    transform: translate(-105%, +10%); /* Justerer for sentrering */
+    transform: translate(-30%, +10%); /* Justerer for sentrering */
 }
 
 .login__enter {
