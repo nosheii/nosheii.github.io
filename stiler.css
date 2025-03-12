@@ -290,6 +290,30 @@ html {
     border: 2px solid #623e2a;
 }
 
+/* CSS til sign up */
+
+.signup__container {
+    display: flex;
+}
+
+.signup__helloyou {
+
+}
+
+
+.signup__havbilde {
+  width: 500px;
+  height: 400;
+}
+
+.signup__skjema {
+
+}
+
+.signup__button {
+
+}
+
 /* Her kommer css til top destinations */
 
 .top__destinations {
