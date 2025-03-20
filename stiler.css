@@ -630,3 +630,70 @@ html {
   }
   
 /* END FOR THE "RENT OUT YOUR HOUSE". For now ;) */ 
+
+/* CSS til reviews */
+.reviews_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.reviews_container {
+    padding: 50px;
+    text-align: center;
+}
+
+.reviews_title {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+    font-family: "CatchyMager";
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+
+.review {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+    font-family: "CatchyMager";
+}
+
+.review_quote {
+    font-size: 2em;
+    color: white;
+}
+
+.review-text {
+    font-size: 1.2em;
+    margin: 10px 0;
+    min-height: 150px;
+}
+
+.review_highlight {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.review_highlight span {
+    display: inline;    
+    color: white;
+    font-weight: normal;
+    margin-left: 5px;
+}
