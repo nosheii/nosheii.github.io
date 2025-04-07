@@ -9,6 +9,7 @@ html {
     padding: 10px;
     position: sticky;
     top: 0px;
+    z-index: 999;
 }
 
 .navbar a {
@@ -105,6 +106,55 @@ html {
     white-space: nowrap; /*gjør at teksten ikke breaker */
 
 }
+
+/*Her kommer de ulike CSS delene for grid layouten for "Accomodations */
+.forside_accommodations {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Her styler jeg griden for at den skal både være 4x4, men om skjermen endrer
+størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme regler*/
+.accommodation_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.accommodation_card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.accommodation_card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.accommodation_card:hover {
+  transform: scale(1.03);
+}
+
+.accommodation_card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.forside_room_info,
+.forside_room_price {
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
 
 @font-face {
     font-family:"CocoGothicLight";

@@ -1,6 +1,6 @@
-<! -- Dette er forsiden, denne skal inneholde de 8 første slidesene i mockupen
+<!-- Dette er forsiden, denne skal inneholde de 8 første slidesene i mockupen
  som en scrollbar hel side.
-Det er fint å bruke enkle navn på de forskjellige delene. Se til discord --> 
+Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -15,11 +15,17 @@ Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
         <a href="accommodations.html">Accomodations</a>
         <a href="list_with_us.html">List with us</a>
         <a href="contact_us.html">Contact us</a>
-        <div class="nav_vertical">
-            <a href="login.html" class="nav_button">Log in</a>
-            <a href="signup.html" class="nav_button">Sign up</a>
-            <a href="rentoutyourhome.html" class="nav_button_rent">Rent out your home</a>
+
+        <!-- Her bruker jeg inline styling da det "overstyrer" det som er på CSS, noe som trengs da 
+        nav baren har flere ulike elementer og jeg ønsker kun spesifikk styling på disse knappene -->
+        <div style="display: flex;flex-direction: column; gap: 2px;">
+            <div style="display: flex">
+                <a style="margin: 0; flex:1" href="login.html" class="nav_button">Log in</a>
+                <a style="margin: 0; flex:1" href="signup.html" class="nav_button">Sign up</a>
+            </div>
+            <a style="margin: 0;" href="rentoutyourhome.html" class="nav_button_rent">Rent out your home</a>
         </div> 
+
     </nav>
     <div class="forside_hero">
         <img class="forside_bilde" src="bilder/bakgrunn.png" />
@@ -27,19 +33,52 @@ Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
         <div class="home_rentals">Home & Rentals</div>
     </div>
     <div class="forside_accomadations"
-    <table>
-        <tr>
-            <td>
-                <img src="hotell_room1.jpg" alt="Hotellrom 1">
+    <div class="forside_accommodations">
+        <h2 style="text-align:center"> Explore Our Stays</h2>
+        <div class="accommodation_grid">
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room1.jpg" alt="Hotellrom 1">
                 <div class="forside_room_info">2 adults | 1 child below 7</div>
                 <div class="forside_room_price">From $200</div>
-            </td>
-            <td>
-                <img src="hotell_room2.jpg" alt="Hotellrom 2">
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room2.jpg" alt="Hotellrom 2">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room3.jpg" alt="Hotellrom 3">
                 <div class="forside_room_info">2 adults | 1 child below 7</div>
-                
-            </td>
-        </tr>
-    </table>      
+                <div class="forside_room_price">From $200</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room4.jpg" alt="Hotellrom 4">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room5.jpg" alt="Hotellrom 5">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room6.jpg" alt="Hotellrom 6">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room7.jpg" alt="Hotellrom 7">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room8.jpg" alt="Hotellrom 8">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+        </div>
+    </div>
+    
+    </div>      
 </body>
 </html>
