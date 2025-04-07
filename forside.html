@@ -32,6 +32,25 @@ Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
         <div class="find_stay">Find your<br> perfect stay</div>
         <div class="home_rentals">Home & Rentals</div>
     </div>
+    <form>
+        <div class="search_bar">
+            <div class="location_input">
+                <label for="location">Where are you going?</label>
+                <input type="text" id="location" name="location" placeholder="Enter a city or region">
+            </div>
+            <div class="date_input">
+                <label for="check_in">Check-in</label>
+                <input type="date" id="check_in" name="check_in">
+            </div>
+            <div class="guest_input">
+                <label for="adults">Adults</label>
+                <input type="number" id="adults" name="adults" value="2" min="1">
+                <label for="children">Children</label>
+                <input type="number" id="children" name="children" value="0" min="0">
+            </div>
+            <button type="submit">Search</button>
+        </div>
+    </form>
     <div class="forside_accomadations"
     <div class="forside_accommodations">
         <h2 style="text-align:center"> Explore Our Stays</h2>

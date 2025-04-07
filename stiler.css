@@ -107,6 +107,17 @@ html {
 
 }
 
+/* Styling for søkebaren i forsiden */
+.search_bar {
+  display: flex;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px; /* for å avrunde kantene */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* skyggelegger den */
+  margin: 20px auto;
+  max-width: 90%;
+}
+
 /*Her kommer de ulike CSS delene for grid layouten for "Accomodations */
 .forside_accommodations {
   padding: 40px;
