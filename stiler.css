@@ -69,6 +69,7 @@ html {
 
 /* Her kommer bakgrunnen på toppen */
 .forside_bilde {
+    display:block;
     max-width:100%;
     max-height:500px;
     width: 100%;
@@ -107,15 +108,108 @@ html {
 
 }
 
-/* Styling for søkebaren i forsiden */
+/* Nå skal jeg style hele søkebaren for å få den på plass midt i forsiden */
 .search_bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Dette er for å holde den i midten */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
   display: flex;
-  background-color: white;
-  padding: 15px;
-  border-radius: 5px; /* for å avrunde kantene */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* skyggelegger den */
-  margin: 20px auto;
+  justify-content: space-around;
+  align-items: center;
   max-width: 90%;
+  width: 800px;
+}
+
+/* Stil for de ulike input feltene */
+.search_bar > div {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.search_bar > div:last-of-type { /*Dette henter ut den siste elementet av div'en jeg kaller frem*/
+  margin-right: 0;
+}
+
+/* Litt mer styling for bar og labelsene */
+.search_bar .search_label {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Her styler jeg de ulike inputtene mine */
+.search_bar input[type="text"],
+.search_bar input[type="date"],
+.search_bar input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Styler den teksten som man skal skrive inn til å være litt gråere */
+.search_bar input::placeholder {
+  color: #999;
+}
+
+/* Et forsøk på å få guest inputtene til å passe bedre ved siden av hverandre ( et forsøk D: ) */
+.search_bar .guest_input > div {
+  display: flex;
+  align-items: center;
+}
+
+.search_bar .guest_input > div > label {
+  margin-right: 5px;
+}
+
+.search_bar .guest_input > div > input[type="number"] {
+  width: 60px;
+}
+
+/* Stil for søkeknappen */
+.search_bar > button[type="submit"] {
+  flex-grow: 0;
+  padding: 10px 20px;
+  background-color: #f9a826;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.search_bar > button[type="submit"]:hover {
+  background-color: #e0951a;
+}
+
+/* Layout for dato-feltene */
+.search_bar > .date_input {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Layout for gjeste-input */
+.search_bar > .guest_input {
+  display: flex;
+  align-items: center;
+}
+
+.search_bar > .guest_input > label {
+  margin-right: 5px;
+}
+
+.search_bar > .guest_input > input[type="number"] {
+  width: 50px;
 }
 
 /*Her kommer de ulike CSS delene for grid layouten for "Accomodations */
@@ -154,14 +248,13 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
   transform: scale(1.03);
 }
 
-.accommodation_card img {
+.accommodation_card img { /*Styler bildene til riktig størrelser*/
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
-.forside_room_info,
-.forside_room_price {
+.forside_room_info, .forside_room_price { /*Litt padding for at puten dems er mykere */
   padding: 10px;
   font-size: 0.95rem;
 }

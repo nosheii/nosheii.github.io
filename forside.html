@@ -42,11 +42,19 @@ Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
                 <label for="check_in" class="search_label">Check-in</label>
                 <input type="date" id="check_in" name="check_in">
             </div>
+            <div class="date_input last">
+                <label for="check_out" class="search_label">Check-out</label>
+                <input type="date" id="check_out" name="check_out">
+            </div>
             <div class="guest_input">
-                <label for="adults" class="search_label">Adults</label>
-                <input type="number" id="adults" name="adults" value="2" min="1">
-                <label for="children" class="search_label">Children</label>
-                <input type="number" id="children" name="children" value="0" min="0">
+                <div>
+                    <label for="adults" class="search_label">Adults</label>
+                    <input type="number" id="adults" name="adults" value="2" min="1">
+                </div>
+                <div class="last">
+                    <label for="children" class="search_label">Children</label>
+                    <input type="number" id="children" name="children" value="0" min="0">
+                </div>
             </div>
             <button type="submit">Search</button>
         </div>
