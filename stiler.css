@@ -228,6 +228,9 @@ html {
     border-radius:20px;
 }
 
+.login__havbilde {
+  border-radius: 50px;
+}
 .login__helloyou {
     color: black;
     position: absolute; /* Legg til absolutt posisjonering */
@@ -241,14 +244,15 @@ html {
     background-color:#e7dbcb;
     color: #5C2C14;
     padding: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 75px;
     border-radius: 50px; 
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center; 
-    width: 350px;
+    text-align: center;
+    width: 500px;
     height: fit-content;
     transform: translate(-60%, +6%); /* Justerer for sentrering */
 }
@@ -261,6 +265,7 @@ html {
     padding: 10px; 
     margin: 5px 0; 
     outline: none;
+    text-align: center;
 }
 
 .login__enter:focus {
