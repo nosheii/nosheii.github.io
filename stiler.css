@@ -254,13 +254,13 @@ html {
 }
 
 .login__enter {
-    background-color:#efebe5;
-    border-radius: 10px;
-    border: none;
-    width: 225px; 
-    padding: 10px; 
-    margin: 5px 0; 
-    outline: none;
+  background-color:#efebe5;
+  border-radius: 10px;
+  border: none;
+  width: 225px; 
+  padding: 10px; 
+  margin: 5px 0; 
+  outline: none;
 }
 
 .login__enter:focus {
@@ -294,24 +294,49 @@ html {
 
 .signup__container {
     display: flex;
+    flex-direction: row;
 }
 
 .signup__helloyou {
-
+  color: black;
+  position: absolute; /* Legg til absolutt posisjonering */
+  top: 1%; /* Plasserer boksen nær toppen */
+  left: 10%; /* Plasserer boksen nær venstre kant */
+  font-family: 'Brush Script MT', cursive;
+  font-size: 60px;width: 800px;
+  border-radius:20px;
 }
 
 
 .signup__havbilde {
-  width: 500px;
-  height: 400;
+  width: 800px;
+    border-radius:20px;
 }
 
 .signup__skjema {
-
+  background-color:#e7dbcb;
+  color: #5C2C14;
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 50px; 
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 350px;
+  height: fit-content;
+  transform: translate(-60%, +10%); /* Justerer for sentrering */
 }
 
 .signup__button {
-
+  background-color:#efebe5;
+    border-radius: 10px;
+    border: none;
+    width: 225px; 
+    padding: 10px; 
+    margin: 5px 0; 
+    outline: none;
 }
 
 /* Her kommer css til top destinations */
