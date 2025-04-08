@@ -471,6 +471,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 /* Her kommer css til top destinations */
 
 .top__destinations {
+    
     text-align: center;
     padding: 50px 20px;
     background-color: #f4f1ed;
@@ -479,12 +480,14 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 .top_destinations__title {
     font-size: 32px;
     color: #623e2a;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 60px;
 }
 
 .top_destinations__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
     gap: 10px;
     flex-wrap: wrap;
     align-items: stretch;
@@ -519,6 +522,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     padding: 20px;
     text-align: left;
     min-height: 180px;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
