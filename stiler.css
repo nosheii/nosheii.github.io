@@ -377,7 +377,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     display: flex;
     flex-direction: row;
 }
-.login__bilde {
+.login__bildebox {
     width: 800px;
     border-radius:20px;
 }
@@ -404,7 +404,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     align-items: center; 
     width: 350px;
     height: fit-content;
-    transform: translate(-60%, +10%); /* Justerer for sentrering */
+    transform: translate(-60%, +6%); /* Justerer for sentrering */
 }
 
 .login__enter {
