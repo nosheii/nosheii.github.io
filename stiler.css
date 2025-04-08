@@ -476,13 +476,13 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     background-color: #f4f1ed;
 }
 
-.top-destinations__title {
+.top_destinations__title {
     font-size: 32px;
     color: #623e2a;
     margin-bottom: 30px;
 }
 
-.top-destinations__container {
+.top_destinations__container {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -491,14 +491,14 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 }
 
 /* Wrapper for hvert kort + bilde */
-.top-destinations__wrapper {
+.top_destinations__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
 }
 
-.top-destinations__image-container {
+.top_destinations__image-container {
     width: 100%;
     height: 200px;
     display: flex;
@@ -506,14 +506,14 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     align-items: center;
 }
 
-.top-destinations__image {
+.top_destinations__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
 
-.top-destinations__card {
+.top_destinations__card {
     background: #f4f1ed;
     border: 2px solid #8b6f5c;
     padding: 20px;
@@ -524,13 +524,13 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     margin-top: 10px;
 }
 
-.top-destinations__name {
+.top_destinations__name {
     font-size: 20px;
     color: #623e2a;
     margin-bottom: 5px;
 }
 
-.top-destinations__description {
+.top_destinations__description {
     font-size: 14px;
     color: #5a4d44;
     line-height: 1.4;
