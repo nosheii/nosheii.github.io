@@ -192,13 +192,13 @@ html {
   background-color: #e0951a;
 }
 
-/* Layout for dato-feltene */
+/* Stiler for dato-feltene */
 .search_bar > .date_input {
   display: flex;
   flex-direction: column;
 }
 
-/* Layout for gjeste-input */
+/* Stiler for gjeste-input */
 .search_bar > .guest_input {
   display: flex;
   align-items: center;
@@ -235,7 +235,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-
+/*Styling for bildene slik at de holder seg til riktig størrelse*/
 .accommodation_card img {
   width: 100%;
   height: 180px;
@@ -243,7 +243,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-
+/* Styling for å gjøre at boksen blir litt større når man tar musen over*/
 .accommodation_card:hover {
   transform: scale(1.03);
 }
@@ -471,6 +471,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 /* Her kommer css til top destinations */
 
 .top__destinations {
+    
     text-align: center;
     padding: 50px 20px;
     background-color: #f4f1ed;
@@ -479,12 +480,14 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 .top_destinations__title {
     font-size: 32px;
     color: #623e2a;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 60px;
 }
 
 .top_destinations__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
     gap: 10px;
     flex-wrap: wrap;
     align-items: stretch;
@@ -519,6 +522,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     padding: 20px;
     text-align: left;
     min-height: 180px;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
