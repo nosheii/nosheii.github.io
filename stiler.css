@@ -192,13 +192,13 @@ html {
   background-color: #e0951a;
 }
 
-/* Layout for dato-feltene */
+/* Stiler for dato-feltene */
 .search_bar > .date_input {
   display: flex;
   flex-direction: column;
 }
 
-/* Layout for gjeste-input */
+/* Stiler for gjeste-input */
 .search_bar > .guest_input {
   display: flex;
   align-items: center;
@@ -235,7 +235,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-
+/*Styling for bildene slik at de holder seg til riktig størrelse*/
 .accommodation_card img {
   width: 100%;
   height: 180px;
@@ -243,7 +243,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-
+/* Styling for å gjøre at boksen blir litt større når man tar musen over*/
 .accommodation_card:hover {
   transform: scale(1.03);
 }
