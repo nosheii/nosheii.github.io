@@ -5,11 +5,14 @@
     </head>
     <body>
         <div class="signup__container">
-            <div class="signup__helloyou">
-                <p>Hello you</p>
-            </div>
             <div class="signup__bildeboks">
                 <img src="https://media.discordapp.net/attachments/1327191240411975680/1347215473288151070/image.png?ex=67d19b2e&is=67d049ae&hm=c2337c98b4d88c2b4e456a92973ab29c26ba8bcb02c74a6f2160ac8736284ace&=&format=webp&quality=lossless&width=966&height=640" class="signup__havbilde">
+                <div class="signup__helloyou">
+                    <p>Hello you</p>
+                </div>
+                <div class="signup__helloyou2">
+                    <p>Hello You</p>
+                </div>
             </div>
             <div class="signup__skjema">
                 <h2>Sign Up</h2>
@@ -31,14 +34,86 @@
                     <label for="verify-password"></label>
                 
                 <p>Terms and Conditions</p>
+                <label class="signup__checkbox>">
                     <input type="checkbox" id="terms" name="terms" required>
                     <label for="terms and conditions">I have read and agree to the Terms and Conditions </label>
                     <br>
-                    <input type="checkbox" id="host" name="host" required>
+                    <label class="signup__checkbox"><
+                        <input type="checkbox" id="host" name="host" required>
                     <label for="host">Check box to become a host</label>
+
                     <button type="submit" class="signup__button">Sign up</button>
                 </form>
             </div>
         </div>
+
+        <style>
+            .signup__container {
+            display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            
+            .signup__bildeboks {
+                position: relative;
+              
+            }
+
+            .signup__havbilde {
+            width: 800px;
+                border-radius:20px;
+            }
+
+            .signup__helloyou, .signup__helloyou2 {
+                position:absolute;
+                color: #623e2a;
+                font-family: 'brush script mt', cursive;
+                font-size: 100px;
+                z-index: 10;
+            }
+
+            .signup__helloyou {
+                color: #623e2a;
+                top: -10;
+                left: 10;
+                font-style: italic;
+                font-size: 90px;width: 800px;
+            }
+
+            .signup__helloyou2 {
+                color:#623e2a;
+                top: 11%;
+                left: 10%;
+
+            }
+
+       
+
+            .signup__skjema {
+            background-color:#e7dbcb;
+            color: #5C2C14;
+            padding: 20px;
+            padding-bottom: 40px;
+            border-radius: 50px; 
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            width: 350px;
+            height: fit-content;
+            transform: translate(-60%, +10%); /* Justerer for sentrering */
+            }
+
+            .signup__button {
+            background-color:#efebe5;
+                border-radius: 10px;
+                border: none;
+                width: 225px; 
+                padding: 10px; 
+                margin: 5px 0; 
+                outline: none;
+            }
+        </style>
     </body>
-</html>
+</html>     
