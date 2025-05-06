@@ -270,43 +270,44 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     src: url('/Fonts/catchymager.ttf') format('truetype');
 }
 
+/* Adjusting footer styling for better alignment and spacing */
 .footer {
     background-color: #623e2a; 
     color: #f4f1ed;
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
+    font-size: 16px;
 }
 
 .footer h2 {
-    text-decoration: none;
     font-family: "CatchyMager";
     font-weight: lighter;
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 36px; 
+    margin-bottom: 30px; 
 }
 
 .footer p {
-    text-decoration: none;
     font-family: "CocoGothic", Arial, Helvetica, sans-serif;
-    font-variant-numeric: Arial, sans-serif;
     font-weight: normal;
-    max-width: 800px;
+    max-width: 700px; 
     margin: 0 auto 20px;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.6; 
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 20px;
+    gap: 20px; 
+    margin-top: 30px; 
+    justify-content: center; 
 }
 
 .footer-box {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 280px; 
     border: 1px solid white;
     display: flex;
     flex-direction: column;
@@ -315,60 +316,52 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     position: relative; 
 }
 
-.footer-box:first-child { /* Applying only to the first column */
-    text-align: left;
-    padding-left: 15px; 
-}
-
-.footer-box:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; 
-}
-.footer-box:nth-child(2) p {
-    margin-top: 60px; 
+/* Her justerer jeg størrelsen på de den siste boksen for å matche de 2 andre*/
+.footer-box:nth-child(3) {
+    flex-basis: auto; 
+    width: 280px; /*Matcher størrelsen til de andre boksene*/
+    text-align: left; 
+    margin: 0 auto;
 }
 
 .footer-box h3 {
     margin: 0;
     padding-bottom: 15px;
-    font-size: 22px;
+    font-size: 20px; 
     text-align: left;
-    text-decoration: none;
     font-family: "CocoGothic";
     font-weight: normal;
 }
 
 .footer-box p {
-    text-decoration: none;
     font-family: "CocoGothic";
     font-weight: 500;
     font-size: 14px;
     margin: 5px 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Justerer marginen for bedre plassering */
 }
-
 
 .tag-button {
     background: none;
     border: 1px solid white;
     color: white;
-    padding: 14px 40px;
+    padding: 12px 30px; /* Justerer paddingen */
     margin-top: 10px;
     cursor: pointer;
     border-radius: 20px;
-}
-
-.social-icons a {
-    color: white;
-    font-size: 20px;
-    margin: 0 10px;
-    text-decoration: none;
+    font-size: 14px; 
 }
 
 .tag-button:hover {
     background: white;
     color: #5C2C14;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px; /* Fikser font sizen */
+    margin: 0 10px;
+    text-decoration: none;
 }
 
 /* CSS til login side*/
@@ -451,70 +444,87 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 
 /* Her kommer css til top destinations */
 
-.top__destinations {
+.top_destinations {
     text-align: center;
     padding: 50px 20px;
     background-color: #f4f1ed;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.top-destinations__title {
+.top_destinations__title {
     font-size: 32px;
     color: #623e2a;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-family: "CatchyMager", sans-serif;
 }
 
-.top-destinations__container {
-    display: flex;
+.top_destinations__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: stretch;
 }
 
-/* Wrapper for hvert kort + bilde */
-.top-destinations__wrapper {
+.top_destinations__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 350px;
+    background-color: #f5ebdd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-.top-destinations__image-container {
+.top_destinations__item:hover {
+    transform: translateY(-10px);
+}
+
+.top_destinations__image-container {
     width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+    height: 220px;
+    overflow: hidden;
 }
 
-.top-destinations__image {
+.top_destinations__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    transition: transform 0.5s ease;
 }
 
-.top-destinations__card {
-    background: #f4f1ed;
-    border: 2px solid #8b6f5c;
+.top_destinations__item:hover .top_destinations__image {
+    transform: scale(1.1);
+}
+
+.top_destinations__card {
     padding: 20px;
-    text-align: left;
-    min-height: 180px;
+    background-color: #f5ebdd;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
 }
 
-.top-destinations__name {
-    font-size: 20px;
+.top_destinations__name {
+    font-size: 22px;
     color: #623e2a;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-family: "CocoGothicLight", Arial, sans-serif;
+    font-weight: bold;
 }
 
-.top-destinations__description {
-    font-size: 14px;
+.top_destinations__description {
+    font-size: 16px;
     color: #5a4d44;
-    line-height: 1.4;
+    line-height: 1.5;
+    font-family: "CocoGothicLight", Arial, sans-serif;
+}
+
+/* Dette er for å gjøre at de ulike elemntene i grid layouten skal være like store */
+@media (max-width: 768px) {
+    .top_destinations__grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* BEGINNING FOR THE "RENT OUT YOUR HOUSE" */
@@ -764,4 +774,103 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     background-color: #4b2f1e;
   }
   
-/* END FOR THE "RENT OUT YOUR HOUSE". For now ;) */ 
+/* END FOR THE "RENT OUT YOUR HOUSE". For now ;) */
+
+/* Styling for Forside_rent_out.html to match the reference photo */
+.flexboks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f1ed;
+}
+
+.forside__boks2 {
+    background-color: #f5ebdd;
+    border-radius: 30px;
+    padding: 30px 40px;
+    width: 55%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 40px;
+}
+
+.forside__boks2 h2 {
+    color: #623e2a;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "CocoGothicLight", Arial, Helvetica, sans-serif;
+}
+
+.forside__boks2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.forside__boks2 li {
+    color: #623e2a;
+    font-family: "CocoGothicLight", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.3;
+}
+
+.forside__boks2 li::before {
+    content: "♦";
+    color: #1e90ff;
+    margin-right: 10px;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.forside__boks2 p {
+    color: #623e2a;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "CocoGothicLight", Arial, Helvetica, sans-serif;
+}
+
+.forside_bilde2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.housekey {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    /* Dette er for å lage "husformen" til bildet */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin-bottom: 20px;
+    border: 2px solid #623e2a;
+}
+
+.forside__3__button_3 {
+    background-color: #623e2a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.forside__3__button_3:hover {
+    background-color: #4b2f1e;
+}
