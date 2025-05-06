@@ -1,6 +1,9 @@
-html {
-    background-color: f4f1ed;
+html, body {
+    background-color: #f4f1ed;
+    margin: 0;
+    padding: 0;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -215,8 +218,9 @@ html {
 /*Her kommer de ulike CSS delene for grid layouten for "Accomodations */
 .forside_accommodations {
   padding: 40px;
-  background-color: #f9f9f9;
+  background-color: #f4f1ed;
   text-align: center;
+  margin: 0;
 }
 
 /* Her styler jeg griden for at den skal både være 4x4, men om skjermen endrer
@@ -277,6 +281,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     text-align: center;
     padding: 60px 20px;
     font-size: 16px;
+    margin-top: 0;
 }
 
 .footer h2 {
@@ -542,6 +547,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     color: #623e2a;
     background-color: #f4f1ed;
     padding: 20px;
+    margin: 0;
   }
   
   /* Container for content */
@@ -782,8 +788,8 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 40px 20px;
     background-color: #f4f1ed;
 }
 
@@ -873,4 +879,125 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 
 .forside__3__button_3:hover {
     background-color: #4b2f1e;
+}
+
+/* Reviews styling */
+.reviews_page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    background: transparent;
+}
+
+.reviews_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: brightness(0.85) sepia(0.2);
+}
+
+.reviews_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.reviews_title {
+    color: white;
+    font-size: 48px;
+    font-family: "CatchyMager", sans-serif;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.reviews { /*Her styler jeg grid layouten for reviews delen*/
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.review {
+    background-color: rgba(255, 255, 255, 0.5); /* Gjennomsiktig hvit bakgrunn*/
+    backdrop-filter: blur(5px); /* Litt blur bak for å gjøre det lettere å lese teksten */
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Boksene med reviews blir litt større når man hoverer over de*/
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.review_quote {
+    font-size: 60px;
+    line-height: 1;
+    color: #623e2a;
+    font-family: serif;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.review_text {
+    color: #623e2a;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: auto;
+    padding-bottom: 20px;
+}
+
+/* Styling for navnet til de som har skrevet anmeldelsen */
+.review_highlight {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #623e2a;
+    margin-top: auto;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Responsivt design for ulike skjermer */
+@media (max-width: 1000px) {
+    .reviews {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width: 650px) {
+    .reviews {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
 }
