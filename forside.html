@@ -5,16 +5,16 @@ Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Om oss</title>
+    <title>Home & Rentals</title>
     <link rel="stylesheet" href="stiler.css">
 </head>
 <body>
     <nav class="navbar">
         <img class="logo" src="bilder/logo.png" href="forside.html">
         <a href="forside.html">Home</a>
-        <a href="accommodations.html">Accomodations</a>
-        <a href="Forside_rent_out.html">List with us</a>
-        <a href="contact_us.html">Contact us</a>
+        <a href="#accommodations">Accomodations</a>
+        <a href="#list-with-us">List with us</a>
+        <a href="#contact-us">Contact us</a>
 
         <!-- Her bruker jeg inline styling da det "overstyrer" det som er på CSS, noe som trengs da 
         nav baren har flere ulike elementer og jeg ønsker kun spesifikk styling på disse knappene -->
@@ -59,8 +59,8 @@ Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
             <button type="submit">Search</button>
         </div>
     </form>
-    <div class="forside_accomadations"
-    <div class="forside_accommodations">
+    <div class="forside_accomadations">
+    <div id="accommodations" class="forside_accommodations">
         <h2 style="text-align:center"> Explore Our Stays</h2>
         <div class="accommodation_grid">
             <div class="accommodation_card">
@@ -108,7 +108,7 @@ Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
     
     </div>      
     <!-- Rent out your home delen er her -->
-    <div class="flexboks">
+    <div id="list-with-us" class="flexboks">
         <div class="forside__boks2">
             <h2>Rent Like a Pro on Home &amp; Rentals!</h2>
             <ul>
@@ -195,7 +195,7 @@ Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
     </section>
     
     <!-- Footeren er nederst -->
-    <footer class="footer">
+    <footer id="contact-us" class="footer"> <!-- *legger til id for å kunne linke til den -->
         <h2>Safe, Secure and always here for you</h2>
         <p>Your safety and satisfaction are our top priorities. 
             With 24/7 customer support, secure payments, and verified listings, you can book with confidence knowing we're here to help every step of the way.</p>
