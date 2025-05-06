@@ -19,7 +19,7 @@ html, body {
 .navbar a {
     color: #623e2a;
     text-decoration: none;
-    font-family: "CocoGothicLight", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
     margin: 0 15px;
@@ -265,10 +265,6 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 }
 
 
-@font-face {
-    font-family:"CocoGothicLight";
-    src: url("./Fonts/cocogothic/CocoGothic_trial.woff2") format("woff2");
-}
 
 @font-face {
     font-family: 'CatchyMager';
@@ -293,7 +289,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 }
 
 .footer p {
-    font-family: "CocoGothic", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     max-width: 700px; 
     margin: 0 auto 20px;
@@ -335,12 +331,10 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     padding-bottom: 15px;
     font-size: 20px; 
     text-align: left;
-    font-family: "CocoGothic";
     font-weight: normal;
 }
 
 .footer-box p {
-    font-family: "CocoGothic";
     font-weight: 500;
     font-size: 14px;
     margin: 5px 0;
@@ -515,7 +509,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     font-size: 22px;
     color: #623e2a;
     margin-bottom: 10px;
-    font-family: "CocoGothicLight", Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -523,7 +517,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     font-size: 16px;
     color: #5a4d44;
     line-height: 1.5;
-    font-family: "CocoGothicLight", Arial, sans-serif;
+    font-family:  Arial, sans-serif;
 }
 
 /* Dette er for å gjøre at de ulike elemntene i grid layouten skal være like store */
@@ -809,7 +803,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     font-weight: bold;
     margin-bottom: 25px;
     text-align: center;
-    font-family: "CocoGothicLight", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .forside__boks2 ul {
@@ -820,7 +814,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 
 .forside__boks2 li {
     color: #623e2a;
-    font-family: "CocoGothicLight", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin-bottom: 16px;
     display: flex;
@@ -842,7 +836,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
-    font-family: "CocoGothicLight", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .forside_bilde2 {
