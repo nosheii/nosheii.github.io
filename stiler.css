@@ -236,6 +236,7 @@ html, body {
 
 /*Her kommer de ulike CSS delene for grid layouten for "Accomodations */
 .forside_accommodations {
+  color: #623e2a;
   padding: 40px;
   background-color: #f4f1ed;
   text-align: center;
