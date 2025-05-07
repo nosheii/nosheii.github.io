@@ -450,9 +450,149 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     border: 2px solid #623e2a;
 }
 
+.signup__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .signup__bildeboks {
+    position: relative;
+    
+  }
+
+  .signup__havbilde {
+    width: 800px;
+    border-radius:100px;
+    border-color: #a4968a;
+  }
+
+  .signup__helloyou, .signup__helloyou2 {
+    position:absolute;
+    color: #623e2a;
+    font-family: 'brush script mt', cursive;
+    font-size: 100px;
+    z-index: 10;
+  }
+
+  .signup__helloyou {
+    color: #623e2a;
+    top: -11%;
+    left: 3%;
+    font-style:italic;
+    font-size: 96px;
+  }
+
+  .signup__helloyou2 {
+    color:#623e2a;
+    top: 11%;
+    left: 4%;
+    font-family: 'Arial', sans-serif;
+    font-size: 60px;
+    font-weight:bold;
+  }
+
+  .signup__tittel {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+
+  }
+
+  .signup__skjema {
+    color: #522710;
+    background-color:#e8d5c4;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border: none;
+    border-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(101, 69, 69, 0.1);
+    display: flex;
+    width: 400px;
+    height: fit-content;
+    transform: translate(-25%, +7%); /* justerer plassering */
+  }
+
+  .signup__info {
+    color: #a4968a;
+    background-color: #e9ded4;
+    margin: 70px;
+    border: #e8d5c4;
+    border-radius: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 9px ;
+    font-size: 18px;
+    padding: 10px;
+    place-items: center;
+  }
+
+  .signup__TAC {
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 15px;
+  }
+
+  .signup__termsboks {
+    display: flex;
+    font-size: 13px;
+  }
+
+  .signup_bokser {
+    display: flex;
+  }
+
+  .signup__checkbox {
+    color: #623e2a;
+    font-size: 13px;
+    display: flex;
+    position: center;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  .signup__checkbox input[type="checkbox"] {
+    appearance: none;
+    border: 2px solid #623e2a;
+    color: #623e2a;
+    background-color: #623e2a;
+    padding: 13px;
+    border-radius: 6px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .signup__checkbox input[type="checkbox"]:checked::after {
+    content:"✔";
+    color: #eeeae4;
+    font-size: 18px;
+    position: absolute; /* beholder størrelse på checkbox etter avkrysning */
+    transform: translate(-50%, -50%); /* sentrerer avkrysning i boks */
+      
+  }
+
+  .signup__button {
+    color: rgb(245, 245, 245);
+    background-color:#623e2a;
+    border-radius: 10px;
+    border: none;
+    width: 300px; 
+    padding: 10px; 
+    margin: 5px auto;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: block; /* sentrerer sign up button */
+  } 
+
 /* Her kommer css til top destinations */
 
-.top_destinations {
+  .top_destinations {
     text-align: center;
     padding: 50px 20px;
     background-color: #f4f1ed;
@@ -460,14 +600,14 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     margin: 0 auto;
 }
 
-.top_destinations__title {
+  .top_destinations__title {
     font-size: 32px;
     color: #623e2a;
     margin-bottom: 40px;
     font-family: "CatchyMager", sans-serif;
 }
 
-.top_destinations__grid {
+  .top_destinations__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -998,5 +1138,130 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     .reviews {
         grid-template-columns: 1fr;
         max-width: 350px;
+    }
+}
+
+/*  om oss seksjonen */
+.booking_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.booking_left, .booking_right {
+    position: relative;
+    border-radius: 40px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.booking_left {
+    flex: 1;
+    background-color: #f5ebdd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 40px;
+}
+
+.booking_header {
+    font-family: "CatchyMager", serif;
+    color: #623e2a;
+    font-size: 42px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.booking_text {
+    font-family: "CocoGothicLight", Arial, sans-serif;
+    color: #623e2a;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.booking_button {
+    width: fit-content;
+    background-color: #623e2a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.booking_button:hover {
+    background-color: #4b2f1e;
+}
+
+.booking_right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 450px;
+}
+
+.booking_image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    max-height: 450px;
+}
+
+.booking_caption {
+    margin: 20px 0;
+    color: #623e2a;
+    font-family: "CocoGothicLight", Arial, sans-serif;
+}
+
+.booking_caption h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: "CatchyMager", serif;
+    font-weight: normal;
+}
+
+.booking_caption p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.booking_rent_button {
+    background-color: #623e2a;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.booking_rent_button:hover {
+    background-color: #4b2f1e;
+}
+
+/* responsivt design for om skjermen endrer størrelse */
+@media (max-width: 768px) {
+    .booking_container {
+        flex-direction: column;
+    }
+    
+    .booking_left, .booking_right {
+        width: 100%;
+        max-width: 100%;
     }
 }
