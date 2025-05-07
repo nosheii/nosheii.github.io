@@ -536,6 +536,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     text-align: center;
     margin-top: 1px;
     margin-bottom: 15px;
+    font-size: 17px;;
   }
 
   .signup__termsboks {
