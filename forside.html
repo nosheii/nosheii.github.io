@@ -29,9 +29,10 @@ Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
     </nav>
     <div class="forside_hero">
         <img class="forside_bilde" src="bilder/bakgrunn.png" />
-        <div class="find_stay">Find your<br> perfect stay</div>
-        <div class="home_rentals">Home & Rentals</div>
-        <form>
+        <div class="search_wrapper">
+            <div class="find_stay" style="margin-bottom: 64px;">Find your<br> perfect stay</div>
+            <div class="home_rentals" style="margin-bottom: 18px;">Home & Rentals</div>
+            <p class="forside_subtext">Affordable, Seamless, Hassle-Free!</p>
             <div class="search_bar">
                 <div class="location_input">
                     <label for="location" class="search_label">Where are you going?</label>
@@ -54,12 +55,13 @@ Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
                         <label for="children" class="search_label">Children</label>
                         <input type="number" id="children" name="children" value="0" min="0">
                     </div>
-                </div>
-                <button style="align-self: end;" type="submit">Search</button>
             </div>
-        </form>
+            <button style="align-self: end;" type="submit">Search</button>
+        </div>
     </div>
-    
+    </div>
+
+
     <div class="forside_accomadations">
     <div id="accommodations" class="forside_accommodations">
         <h2 style="text-align:center"> Explore Our Stays</h2>
