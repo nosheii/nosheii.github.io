@@ -1191,7 +1191,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 }
 
 .booking_text {
-  font-family: "CocoGothicLight", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   color: #623e2a;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -1236,7 +1236,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 .booking_caption {
   margin: 20px 0;
   color: #623e2a;
-  font-family: "CocoGothicLight", Arial, sans-serif;
+  font-family:  Arial, sans-serif;
 }
 
 .booking_caption h3 {
