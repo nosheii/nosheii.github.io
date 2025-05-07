@@ -10,22 +10,21 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" 
     rel="stylesheet"
   >
-  <style>
-    @font-face {
-      font-family: 'CatchyMager';
-      src: url('/Fonts/catchymager.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
-  </style>
+  
   <link rel="stylesheet" href="stiler.css">
-
 </head>
 <body>
-  <div class="rent_out_home">
-    <div class="rent_out_home__container">
-      <h1>Start renting out your home</h1>
-      <div class="rent_out_home__content">
+
+<div class="rent_out_home">
+
+  <div class="rent_out_home__container">
+    <h1>Start renting out your home</h1>
+    <div class="rent_out_home__content">
+    
+      <!-- Left side -->
+      <div class="rent_out_home__left">
+        
+        <!-- "Name your rental" -->
         <div class="rent_out_home__name_rental_oval">
           <label for="rent_out_home__rental_name" class="rent_out_home__name_rental_label">
             Name your rental:
@@ -37,160 +36,165 @@
             placeholder="Give your place a title"
           >
         </div>
-        <!-- Left collumn (form) -->
-        <div class="rent_out_home__left">
-          <div class="rent_out_home__form_row">
-            <label for="rent_out_home__address">Property address:</label>
-            <input type="text" id="rent_out_home__address" placeholder="12 Address, 1234 Place, Norway">
-          </div>
-          
-          <div class="rent_out_home__form_row">
-            <label for="rent_out_home__property_type">Property type:</label>
-            <div class="rent_out_home__select_arrow_left">
-              <select id="rent_out_home__property_type">
-                <option>House</option>
-                <option>Apartment</option>
-                <option>Condo</option>
-              </select>
-            </div>
-          </div>
-          
-          <div class="rent_out_home__form_row">
-            <label for="rent_out_home__bedrooms">Bedrooms:</label>
-            <div class="rent_out_home__select_arrow_left">
-              <select id="rent_out_home__bedrooms">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
-              </select>
-            </div>
-          </div>
-          
-          <div class="rent_out_home__form_row">
-            <label for="rent_out_home__beds">Beds:</label>
-            <div class="rent_out_home__select_arrow_left">
-              <select id="rent_out_home__beds">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
-              </select>
-            </div>
-          </div>
-          
-          <div class="rent_out_home__form_row">
-            <label for="rent_out_home__guest_limit">Guest limit:</label>
-            <div class="rent_out_home__select_arrow_left">
-              <select id="rent_out_home__guest_limit">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
-              </select>
-            </div>
-          </div>
-          
-          <div class="rent_out_home__form_row">
-            <label for="rent_out_home__bathrooms">Bathrooms:</label>
-            <div class="rent_out_home__select_arrow_left">
-              <select id="rent_out_home__bathrooms">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Icons (Facilities) -->
-          <div class="rent_out_home__facilities_block">
-            <p class="rent_out_home__facilities_title">Click on relevant facilities:</p>
-            <div class="rent_out_home__facilities_icons">
-              <label class="rent_out_home__facility_item">
-                <input type="checkbox" name="facilities" value="wifi">
-                <img src="icons/wifi.png" alt="Wi-Fi" class="rent_out_home__icon_img">
-              </label>
-              <label class="rent_out_home__facility_item">
-                <input type="checkbox" name="facilities" value="tv">
-                <img src="icons/TV.png" alt="TV" class="rent_out_home__icon_img">
-              </label>
-              <label class="rent_out_home__facility_item">
-                <input type="checkbox" name="facilities" value="parking">
-                <img src="icons/Parking.png" alt="Parking" class="rent_out_home__icon_img">
-              </label>
-              <label class="rent_out_home__facility_item">
-                <input type="checkbox" name="facilities" value="heating">
-                <img src="icons/Heating.png" alt="Heating" class="rent_out_home__icon_img">
-              </label>
-              <label class="rent_out_home__facility_item">
-                <input type="checkbox" name="facilities" value="pets">
-                <img src="icons/pets.png" alt="pets" class="rent_out_home__icon_img">
-              </label>
-              <label class="rent_out_home__facility_item">
-                <input type="checkbox" name="facilities" value="hairdryer">
-                <img src="icons/hairdryer.png" alt="hairdryer" class="rent_out_home__icon_img">
-              </label>
-              <label class="rent_out_home__facility_item">
-                <input type="checkbox" name="facilities" value="washingmachine">
-                <img src="icons/washingmachine.png" alt="Washing Machine" class="rent_out_home__icon_img">
-              </label>
-              <label class="rent_out_home__facility_item">
-                <input type="checkbox" name="facilities" value="dryer">
-                <img src="icons/dryer.png" alt="Dryer" class="rent_out_home__icon_img">
-              </label>
-              <label class="rent_out_home__facility_item">
-                <input type="checkbox" name="facilities" value="pool">
-                <img src="icons/pool.png" alt="Pool" class="rent_out_home__icon_img">
-              </label>
-              <label class="rent_out_home__facility_item">
-                <input type="checkbox" name="facilities" value="kitchen">
-                <img src="icons/kitchen.png" alt="kitchen" class="rent_out_home__icon_img">
-              </label>
-              <label class="rent_out_home__facility_item">
-                <input type="checkbox" name="facilities" value="iron">
-                <img src="icons/iron.png" alt="Iron" class="rent_out_home__icon_img">
-              </label>
-            </div>
-          </div>
-        </div>
         
-        <!-- Right form (image and button under it) -->
-        <div class="rent_out_home__right">
-          <div class="rent_out_home__photo_container" onclick="document.getElementById('rent_out_home__imageInput').click()">
-            <img id="rent_out_home__previewImage" alt="Preview">
-            <div class="rent_out_home__camera_icon" id="rent_out_home__cameraIcon"></div>
-            <div class="rent_out_home__insert_text">Insert your images +</div>
-          </div>
-          <input type="file" id="rent_out_home__imageInput" accept="image/*" multiple>
-          <button class="rent_out_home__publish_btn">Publish listing</button>
+        <div class="rent_out_home__form_row">
+          <label for="rent_out_home__address">Property address:</label>
+          <input 
+            type="text" 
+            id="rent_out_home__address" 
+            placeholder="12 Address, 1234 Place, Norway"
+          >
         </div>
-      
+
+        <div class="rent_out_home__form_row">
+          <label for="rent_out_home__property_type">Property type:</label>
+          <div class="rent_out_home__select_arrow_left">
+            <select id="rent_out_home__property_type">
+              <option>House</option>
+              <option>Apartment</option>
+              <option>Condo</option>
+              <option>Garage</option>
+              <option>Villa</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="rent_out_home__form_row">
+          <label for="rent_out_home__bedrooms">Bedrooms:</label>
+          <div class="rent_out_home__select_arrow_left">
+            <select id="rent_out_home__bedrooms">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="rent_out_home__form_row">
+          <label for="rent_out_home__beds">Beds:</label>
+          <div class="rent_out_home__select_arrow_left">
+            <select id="rent_out_home__beds">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="rent_out_home__form_row">
+          <label for="rent_out_home__guest_limit">Guest limit:</label>
+          <div class="rent_out_home__select_arrow_left">
+            <select id="rent_out_home__guest_limit">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="rent_out_home__form_row">
+          <label for="rent_out_home__bathrooms">Bathrooms:</label>
+          <div class="rent_out_home__select_arrow_left">
+            <select id="rent_out_home__bathrooms">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4+</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Facilities -->
+        <div class="rent_out_home__facilities_block">
+          <p class="rent_out_home__facilities_title">Click on relevant facilities:</p>
+          <div class="rent_out_home__facilities_icons">
+            <label class="rent_out_home__facility_item">
+              <input type="checkbox" name="facilities" value="wifi">
+              <img src="icons/wifi.png" alt="Wi-Fi" class="rent_out_home__icon_img">
+            </label>
+            <label class="rent_out_home__facility_item">
+              <input type="checkbox" name="facilities" value="tv">
+              <img src="icons/TV.png" alt="TV" class="rent_out_home__icon_img">
+            </label>
+            <label class="rent_out_home__facility_item">
+              <input type="checkbox" name="facilities" value="parking">
+              <img src="icons/Parking.png" alt="Parking" class="rent_out_home__icon_img">
+            </label>
+            <label class="rent_out_home__facility_item">
+              <input type="checkbox" name="facilities" value="heating">
+              <img src="icons/Heating.png" alt="Heating" class="rent_out_home__icon_img">
+            </label>
+            <label class="rent_out_home__facility_item">
+              <input type="checkbox" name="facilities" value="pets">
+              <img src="icons/pets.png" alt="pets" class="rent_out_home__icon_img">
+            </label>
+            <label class="rent_out_home__facility_item">
+              <input type="checkbox" name="facilities" value="hairdryer">
+              <img src="icons/hairdryer.png" alt="hairdryer" class="rent_out_home__icon_img">
+            </label>
+            <label class="rent_out_home__facility_item">
+              <input type="checkbox" name="facilities" value="washingmachine">
+              <img src="icons/washingmachine.png" alt="Washing Machine" class="rent_out_home__icon_img">
+            </label>
+            <label class="rent_out_home__facility_item">
+              <input type="checkbox" name="facilities" value="dryer">
+              <img src="icons/dryer.png" alt="Dryer" class="rent_out_home__icon_img">
+            </label>
+            <label class="rent_out_home__facility_item">
+              <input type="checkbox" name="facilities" value="pool">
+              <img src="icons/pool.png" alt="Pool" class="rent_out_home__icon_img">
+            </label>
+            <label class="rent_out_home__facility_item">
+              <input type="checkbox" name="facilities" value="kitchen">
+              <img src="icons/kitchen.png" alt="kitchen" class="rent_out_home__icon_img">
+            </label>
+            <label class="rent_out_home__facility_item">
+              <input type="checkbox" name="facilities" value="iron">
+              <img src="icons/iron.png" alt="Iron" class="rent_out_home__icon_img">
+            </label>
+          </div>
+        </div>
       </div>
+
+      <!-- Right side -->
+      <div class="rent_out_home__right">
+        <div class="rent_out_home__photo_container" onclick="document.getElementById('rent_out_home__imageInput').click()">
+          <img id="rent_out_home__previewImage" alt="Preview">
+          <div class="rent_out_home__camera_icon" id="rent_out_home__cameraIcon"></div>
+          <div class="rent_out_home__insert_text">Insert your images +</div>
+        </div>
+        <input type="file" id="rent_out_home__imageInput" accept="image/*" multiple>
+        <button class="rent_out_home__publish_btn">Publish listing</button>
+      </div>
+
     </div>
   </div>
-  
-  <!-- REAL PROGRAMMING YOOOOO. JavaScript for image -->
-  <script>
-    const imageInput = document.getElementById('rent_out_home__imageInput');
-    const previewImage = document.getElementById('rent_out_home__previewImage');
-    const cameraIcon = document.getElementById('rent_out_home__cameraIcon');
+</div>
 
-    imageInput.addEventListener('change', function(event) {
-      const files = event.target.files;
-      if (files && files[0]) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-          previewImage.src = e.target.result;
-          previewImage.style.display = 'block';
-          cameraIcon.style.display = 'none';
-        };
-        reader.readAsDataURL(files[0]);
-      } else {
-        previewImage.style.display = 'none';
-        cameraIcon.style.display = 'block';
-      }
-    });
-  </script>
+<script>
+  const imageInput = document.getElementById('rent_out_home__imageInput');
+  const previewImage = document.getElementById('rent_out_home__previewImage');
+  const cameraIcon = document.getElementById('rent_out_home__cameraIcon');
+
+  imageInput.addEventListener('change', function(event) {
+    const files = event.target.files;
+    if (files && files[0]) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        previewImage.src = e.target.result;
+        previewImage.style.display = 'block';
+        cameraIcon.style.display = 'none';
+      };
+      reader.readAsDataURL(files[0]);
+    } else {
+      previewImage.style.display = 'none';
+      cameraIcon.style.display = 'block';
+    }
+  });
+</script>
+
 </body>
 </html>

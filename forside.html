@@ -1,30 +1,225 @@
-<! -- Dette er forsiden, denne skal inneholde de 8 første slidesene i mockupen
+<!-- Dette er forsiden, denne skal inneholde de 8 første slidesene i mockupen
  som en scrollbar hel side.
-Det er fint å bruke enkle navn på de forskjellige delene. Se til discord --> 
+Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Om oss</title>
+    <title>Home & Rentals</title>
     <link rel="stylesheet" href="stiler.css">
 </head>
 <body>
     <nav class="navbar">
-        <img class="logo" src="bilder/logo.png">
+        <img class="logo" src="bilder/logo.png" href="forside.html">
         <a href="forside.html">Home</a>
-        <a href="accommodations.html">Accomodations</a>
-        <a href="list_with_us.html">List with us</a>
-        <a href="contact_us.html">Contact us</a>
-        <div class="nav_vertical">
-            <a href="login.html" class="nav_button">Log in</a>
-            <a href="signup.html" class="nav_button">Sign up</a>
-            <a href="rentoutyourhome.html" class="nav_button_rent">Rent out your home</a>
+        <a href="#accommodations">Accomodations</a>
+        <a href="#list-with-us">List with us</a>
+        <a href="#contact-us">Contact us</a>
+
+        <!-- Her bruker jeg inline styling da det "overstyrer" det som er på CSS, noe som trengs da 
+        nav baren har flere ulike elementer og jeg ønsker kun spesifikk styling på disse knappene -->
+        <div style="display: flex;flex-direction: column; gap: 2px;">
+            <div style="display: flex">
+                <a style="margin: 0; flex:1" href="login.html" class="nav_button">Log in</a>
+                <a style="margin: 0; flex:1" href="signup.html" class="nav_button">Sign up</a>
+            </div>
+            <a style="margin: 0;" href="rentoutyourhome.html" class="nav_button_rent">Rent out your home</a>
         </div> 
+
     </nav>
     <div class="forside_hero">
         <img class="forside_bilde" src="bilder/bakgrunn.png" />
         <div class="find_stay">Find your<br> perfect stay</div>
         <div class="home_rentals">Home & Rentals</div>
     </div>
+    <form>
+        <div class="search_bar">
+            <div class="location_input">
+                <label for="location" class="search_label">Where are you going?</label>
+                <input type="text" id="location" name="location" placeholder="Enter a city or region">
+            </div>
+            <div class="date_input">
+                <label for="check_in" class="search_label">Check-in</label>
+                <input type="date" id="check_in" name="check_in">
+            </div>
+            <div class="date_input last">
+                <label for="check_out" class="search_label">Check-out</label>
+                <input type="date" id="check_out" name="check_out">
+            </div>
+            <div class="guest_input">
+                <div>
+                    <label for="adults" class="search_label">Adults</label>
+                    <input type="number" id="adults" name="adults" value="2" min="1">
+                </div>
+                <div class="last">
+                    <label for="children" class="search_label">Children</label>
+                    <input type="number" id="children" name="children" value="0" min="0">
+                </div>
+            </div>
+            <button type="submit">Search</button>
+        </div>
+    </form>
+    <div class="forside_accomadations">
+    <div id="accommodations" class="forside_accommodations">
+        <h2 style="text-align:center"> Explore Our Stays</h2>
+        <div class="accommodation_grid">
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room1.jpg" alt="Hotellrom 1">
+                <div class="forside_room_info">2 adults | 1 child below 7</div>
+                <div class="forside_room_price">From $200</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room2.jpg" alt="Hotellrom 2">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room3.jpg" alt="Hotellrom 3">
+                <div class="forside_room_info">2 adults | 1 child below 7</div>
+                <div class="forside_room_price">From $200</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room4.jpg" alt="Hotellrom 4">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room5.jpg" alt="Hotellrom 5">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room6.jpg" alt="Hotellrom 6">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room7.jpg" alt="Hotellrom 7">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+            <div class="accommodation_card">
+                <img src="bilder/hotell_room8.jpg" alt="Hotellrom 8">
+                <div class="forside_room_info">2 adults</div>
+                <div class="forside_room_price">From $180</div>
+            </div>
+        </div>
+    </div>
+    
+    </div>      
+    <!-- Rent out your home delen er her -->
+    <div id="list-with-us" class="flexboks">
+        <div class="forside__boks2">
+            <h2>Rent Like a Pro on Home &amp; Rentals!</h2>
+            <ul>
+                <li>Show It Off – Use killer photos &amp; a detailed description.</li>
+                <li>Price Smart – Check competitors &amp; offer discounts.</li>
+                <li>Set the Rules – Clear cancellation &amp; refund policies.</li>
+                <li>Be Quick – Fast replies = more bookings.</li>
+                <li>Keep It Fresh – Clean space, comfy vibes, essentials stocked.</li>
+                <li>Boost Your Rep – Great stays = great reviews = more guests!</li>
+            </ul>
+            <p>List. Host. Earn!</p>
+        </div>
+        <div class="forside_bilde2">
+            <img src="bilder/housephoto.jpg" alt="House key frame" class="housekey">
+            <a href="rentoutyourhome.html" class="button-link">
+                <button type="button" class="forside__3__button_3">Click here to start listing</button>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Top destinations delen -->
+    <section class="top_destinations">
+        <h2 class="top_destinations__title">Explore Our Top Destinations</h2>
+        <div class="top_destinations__grid">
+            
+            <div class="top_destinations__item">
+                <div class="top_destinations__image-container">
+                    <img src="bilder/lofoten.jpg" alt="Lofoten, Norway" class="top_destinations__image">
+                </div>
+                <div class="top_destinations__card">
+                    <h3 class="top_destinations__name">Lofoten, Norway</h3>
+                    <p class="top_destinations__description">Dramatic mountains, white sandy beaches, and picturesque fishing villages. Perfect for adventurous travelers and those looking to experience the midnight sun or the northern lights.</p>
+                </div>
+            </div>
+
+            <div class="top_destinations__item">
+                <div class="top_destinations__image-container">
+                    <img src="bilder/geirangerfjord.jpg" alt="Geirangerfjord, Norway" class="top_destinations__image">
+                </div>
+                <div class="top_destinations__card">
+                    <h3 class="top_destinations__name">Geirangerfjord, Norway</h3>
+                    <p class="top_destinations__description">One of Norway's most stunning fjords, surrounded by waterfalls and majestic mountains. Ideal for fjord cruises, kayaking, and nature experiences.</p>
+                </div>
+            </div>
+
+            <div class="top_destinations__item">
+                <div class="top_destinations__image-container">
+                    <img src="bilder/tromso.jpg" alt="Tromsø, Norway" class="top_destinations__image">
+                </div>
+                <div class="top_destinations__card">
+                    <h3 class="top_destinations__name">Tromsø, Norway</h3>
+                    <p class="top_destinations__description">The northern lights capital, offering Arctic adventures, ice hotels, and dog sledding. A perfect destination for both winter and summer activities.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Reviews seksjonen -->
+    <section class="reviews_section" style="background-image: url('bilder/staircase2.JPG'); background-size: cover; background-position: center; background-attachment: fixed; position: relative; padding: 60px 0;">
+        <!-- For bedre lelsbarhet og for å overskrive CSS for å ha bedre oversikt-->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)); z-index: 0;"></div>
+        
+        <div class="reviews_container" style="position: relative; z-index: 1;">
+            <h1 class="reviews_title">Our Reviews</h1>
+            <div class="reviews">
+                <div class="review">
+                    <div class="review_quote">&ldquo;</div>
+                    <p class="review_text">I booked an apartment through Home & Rentals, and everything went smoothly! Super easy booking process and a fantastic host. I’ll definitely use this again!</p>
+                    <p class="review_highlight">★ "Amazing experience!"<br>- Petter Rev</p>
+                </div>
+                <div class="review">
+                    <div class="review_quote">&ldquo;</div>
+                    <p class="review_text">I was a bit skeptical about trying a new platform, but Home & Rentals delivered! Easy to use, and customer service was quick and helpful when I had questions.</p>
+                    <p class="review_highlight">★ "Seamless and reliable"<br>- Sattog Skrev</p>
+                </div>
+                <div class="review">
+                    <div class="review_quote">&ldquo;</div>
+                    <p class="review_text">I’ve used Home & Rentals several times, and it never disappoints. Always great experiences and wonderful hosts. Easier than a hotel!</p>
+                    <p class="review_highlight">★ "Will return!"<br>- Påen litentavle</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footeren er nederst -->
+    <footer id="contact-us" class="footer"> <!-- *legger til id for å kunne linke til den -->
+        <h2>Safe, Secure and always here for you</h2>
+        <p>Your safety and satisfaction are our top priorities. 
+            With 24/7 customer support, secure payments, and verified listings, you can book with confidence knowing we're here to help every step of the way.</p>
+        <div class = "footer-container">
+            <div class = "footer-box">
+                <h3>Our Information</h3>
+                <p>📍 Bredalsveien 14, 3511 Hønefoss</p>
+                <p>📞 +47 123 45 678</p>
+                <p>📧 cyberknights@mail.no</p>
+            </div>
+            <div class="footer-box">
+                <h3>Office hours</h3>
+                <p>📞 24/7 customer support available via phone and email.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Get Social</h3>
+                <div class="social-icons"> 
+                    <a href="#"></i></a>
+                    <a href="#"></i></a>
+                    <a href="#"></a>
+                </div>
+                <button class="tag-button">Tag us in your photos!</button>
+            </div>
+        </div> 
+    </footer>
 </body>
 </html>
