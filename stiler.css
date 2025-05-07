@@ -1153,3 +1153,129 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
         max-width: 350px;
     }
 }
+
+
+/*  om oss seksjonen */
+.booking_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.booking_left, .booking_right {
+  position: relative;
+  border-radius: 40px;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.booking_left {
+  flex: 1;
+  background-color: #f5ebdd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 40px;
+}
+
+.booking_header {
+  font-family: "CatchyMager", serif;
+  color: #623e2a;
+  font-size: 42px;
+  margin-bottom: 25px;
+  font-weight: normal;
+}
+
+.booking_text {
+  font-family: "CocoGothicLight", Arial, sans-serif;
+  color: #623e2a;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.booking_button {
+  width: fit-content;
+  background-color: #623e2a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.booking_button:hover {
+  background-color: #4b2f1e;
+}
+
+.booking_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 450px;
+}
+
+.booking_image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  max-height: 450px;
+}
+
+.booking_caption {
+  margin: 20px 0;
+  color: #623e2a;
+  font-family: "CocoGothicLight", Arial, sans-serif;
+}
+
+.booking_caption h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-family: "CatchyMager", serif;
+  font-weight: normal;
+}
+
+.booking_caption p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.booking_rent_button {
+  background-color: #623e2a;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.booking_rent_button:hover {
+  background-color: #4b2f1e;
+}
+
+/* responsivt design for om skjermen endrer størrelse */
+@media (max-width: 768px) {
+  .booking_container {
+      flex-direction: column;
+  }
+  
+  .booking_left, .booking_right {
+      width: 100%;
+      max-width: 100%;
+  }
+}
