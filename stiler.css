@@ -115,7 +115,7 @@ html, body {
 /* Nå skal jeg style hele søkebaren for å få den på plass midt i forsiden */
 .search_bar {
   position: absolute;
-  top: 50%;
+  top: 72%;
   left: 50%;
   transform: translate(-50%, -50%); /* Dette er for å holde den i midten */
   background-color: #efebe5;
