@@ -915,7 +915,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 .reviews_title {
     color: white;
     font-size: 48px;
-    font-family: "CatchyMager", sans-serif;
+    font-family: "CatchyMager";
     text-align: center;
     margin-bottom: 60px;
     font-weight: normal;
