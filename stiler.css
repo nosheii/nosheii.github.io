@@ -293,73 +293,144 @@ html {
 /* CSS til sign up */
 
 .signup__container {
-    display: flex;
-    flex-direction: row;
-}
-
-.signup__helloyou {
-  color: black;
-  position: absolute; /* Legg til absolutt posisjonering */
-  top: 1%; /* Plasserer boksen nær toppen */
-  left: 10%; /* Plasserer boksen nær venstre kant */
-  font-family: 'Brush Script MT', cursive;
-  font-size: 60px;width: 800px;
-  border-radius:20px;
-}
-
-
-.signup__havbilde {
-  width: 800px;
-    border-radius:20px;
-}
-
-.signup__skjema {
-  background-color:#e7dbcb;
-  color: #5C2C14;
-  padding: 20px;
-  padding-bottom: 40px;
-  border-radius: 50px; 
-  border: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
-  align-items: center; 
-  width: 350px;
-  height: fit-content;
-  transform: translate(-60%, +10%); /* Justerer for sentrering */
-}
+      flex-direction: row;
+      align-items: flex-start;
+  }
+  
+  .signup__bildeboks {
+      position: relative;
+    
+  }
 
-.signup__button {
-  background-color:#efebe5;
-    border-radius: 10px;
-    border: none;
-    width: 225px; 
-    padding: 10px; 
-    margin: 5px 0; 
-    outline: none;
-}
+  .signup__havbilde {
+  width: 800px;
+      border-radius:100px;
+      border-color: #a4968a;
+  }
 
-/* Her kommer css til top destinations */
+  .signup__helloyou, .signup__helloyou2 {
+      position:absolute;
+      color: #623e2a;
+      font-family: 'brush script mt', cursive;
+      font-size: 100px;
+      z-index: 10;
+  }
 
-.top__destinations {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f4f1ed;
-}
+  .signup__helloyou {
+      color: #623e2a;
+      top: -11%;
+      left: 3%;
+      font-style:italic;
+      font-size: 96px;
+  }
 
-.top-destinations__title {
-    font-size: 32px;
-    color: #623e2a;
-    margin-bottom: 30px;
-}
+  .signup__helloyou2 {
+      color:#623e2a;
+      top: 11%;
+      left: 4%;
+      font-family: 'Arial', sans-serif;
+      font-size: 60px;
+      font-weight:bold;
+  }
 
-.top-destinations__container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
+  .signup__tittel {
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      margin-top: 10px;
+      margin-bottom: -10px;
+
+  }
+
+  .signup__skjema {
+      color: #522710;
+      background-color:#e8d5c4;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      border: none;
+      border-radius: 50px;
+      flex-direction: column;
+      align-items: center;
+       box-shadow: 0 0 10px rgba(101, 69, 69, 0.1);
+      display: flex;
+      width: 400px;
+      height: fit-content;
+      transform: translate(-25%, +7%); /* justerer plassering */
+  }
+
+  .signup__info {
+      color: #a4968a;
+      background-color: #e9ded4;
+      margin: 70px;
+      border: #e8d5c4;
+      border-radius: 10px;
+      margin-top: 1px;
+      margin-bottom: 1px;
+      padding: 9px ;
+      font-size: 18px;
+      padding: 10px;
+      place-items: center;
+  }
+
+  .signup__TAC {
+      text-align: center;
+      margin-top: 1px;
+      margin-bottom: 15px;
+  }
+
+  .signup__termsboks {
+      display: flex;
+      font-size: 13px;
+  }
+
+  .signup_bokser {
+      display: flex;
+  }
+
+  .signup__checkbox {
+      color: #623e2a;
+      font-size: 13px;
+      display: flex;
+      position: center;
+      font-weight: bold;
+      align-items: center;
+  }
+
+  .signup__checkbox input[type="checkbox"] {
+      appearance: none;
+      border: 2px solid #623e2a;
+      color: #623e2a;
+      background-color: #623e2a;
+      padding: 13px;
+      border-radius: 6px;
+      margin: 10px;
+      cursor: pointer;
+  }
+
+  .signup__checkbox input[type="checkbox"]:checked::after {
+      content:"✔";
+      color: #eeeae4;
+      font-size: 18px;
+      position: absolute; /* beholder størrelse på checkbox etter avkrysning */
+      transform: translate(-50%, -50%); /* sentrerer avkrysning i boks */
+      
+  }
+
+  .signup__button {
+      color: rgb(245, 245, 245);
+      background-color:#623e2a;
+      border-radius: 10px;
+      border: none;
+      width: 300px; 
+      padding: 10px; 
+      margin: 5px auto;
+      outline: none;
+      font-weight: bold;
+      font-size: 18px;
+      display: block; /* sentrerer sign up button */
+  } 
 
 /* Wrapper for hvert kort + bilde */
 .top-destinations__wrapper {
