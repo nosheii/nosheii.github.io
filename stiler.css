@@ -902,8 +902,6 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
-    filter: brightness(0.85) sepia(0.2);
 }
 
 .reviews_container {
@@ -919,7 +917,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 }
 
 .reviews_title {
-    color: white;
+    color: #f5ebdd;
     font-size: 48px;
     font-family: "CatchyMager";
     text-align: center;
@@ -938,7 +936,6 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 }
 
 .review {
-    background-color: rgba(255, 255, 255, 0.5); /* Gjennomsiktig hvit bakgrunn*/
     backdrop-filter: blur(5px); /* Litt blur bak for å gjøre det lettere å lese teksten */
     border-radius: 15px;
     padding: 30px;
@@ -947,9 +944,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     flex-direction: column;
     min-height: 280px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;}
 
 /* Boksene med reviews blir litt større når man hoverer over de*/
 .review:hover {
@@ -960,7 +955,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 .review_quote {
     font-size: 60px;
     line-height: 1;
-    color: #623e2a;
+    color: #f5ebdd;
     font-family: serif;
     margin-bottom: 10px;
     position: absolute;
@@ -969,13 +964,14 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 }
 
 .review_text {
-    color: #623e2a;
+    color: #f5ebdd;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin-top: 30px;
     margin-bottom: auto;
     padding-bottom: 20px;
+    text-shadow: #000000 0px 0px 5px;
 }
 
 /* Styling for navnet til de som har skrevet anmeldelsen */
@@ -983,7 +979,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     font-family: Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
-    color: #623e2a;
+    color: #f5ebdd;
     margin-top: auto;
     text-align: left;
     line-height: 1.5;
