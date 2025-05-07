@@ -118,7 +118,8 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Dette er for å holde den i midten */
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #efebe5;
+  background-color: rgba(239, 235, 229, 0.8); /* Gjør at den er litt gjennomsiktig */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -143,9 +144,10 @@ html, body {
 /* Litt mer styling for bar og labelsene */
 .search_bar .search_label {
   font-size: 0.9em;
-  color: #555;
+  color: #623e2a;
   margin-bottom: 5px;
   display: block;
+  font-weight: bold;
 }
 
 /* Her styler jeg de ulike inputtene mine */
@@ -189,7 +191,7 @@ html, body {
 .search_bar > button[type="submit"] {
   flex-grow: 0;
   padding: 10px 20px;
-  background-color: #f9a826;
+  background-color: #6c4924;
   color: white;
   border: none;
   border-radius: 5px;
@@ -199,7 +201,7 @@ html, body {
 }
 
 .search_bar > button[type="submit"]:hover {
-  background-color: #e0951a;
+  background-color: #5f4020;
 }
 
 /* Stiler for dato-feltene */
