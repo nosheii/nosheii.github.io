@@ -166,6 +166,12 @@ html, body {
 }
 
 /* Et forsøk på å få guest inputtene til å passe bedre ved siden av hverandre ( et forsøk D: ) */
+
+.guest_input {
+  display: flex;
+  gap: 0.25rem
+}
+
 .search_bar .guest_input > div {
   display: flex;
   align-items: center;
