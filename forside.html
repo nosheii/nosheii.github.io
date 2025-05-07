@@ -29,36 +29,39 @@ Det er fint å bruke enkle navn på de forskjellige delene. Se til discord -->
     </nav>
     <div class="forside_hero">
         <img class="forside_bilde" src="bilder/bakgrunn.png" />
-        <div class="find_stay">Find your<br> perfect stay</div>
-        <div class="home_rentals">Home & Rentals</div>
-    </div>
-    <form>
-        <div class="search_bar">
-            <div class="location_input">
-                <label for="location" class="search_label">Where are you going?</label>
-                <input type="text" id="location" name="location" placeholder="Enter a city or region">
-            </div>
-            <div class="date_input">
-                <label for="check_in" class="search_label">Check-in</label>
-                <input type="date" id="check_in" name="check_in">
-            </div>
-            <div class="date_input last">
-                <label for="check_out" class="search_label">Check-out</label>
-                <input type="date" id="check_out" name="check_out">
-            </div>
-            <div class="guest_input">
-                <div style="display: flex; flex-direction: column;">
-                    <label for="adults" class="search_label">Adults</label>
-                    <input type="number" id="adults" name="adults" value="2" min="1">
+        <div class="search_wrapper">
+            <div class="find_stay" style="margin-bottom: 64px;">Find your<br> perfect stay</div>
+            <div class="home_rentals" style="margin-bottom: 18px;">Home & Rentals</div>
+            <p class="forside_subtext">Affordable, Seamless, Hassle-Free!</p>
+            <div class="search_bar">
+                <div class="location_input">
+                    <label for="location" class="search_label">Where are you going?</label>
+                    <input type="text" id="location" name="location" placeholder="Enter a city or region">
                 </div>
-                <div class="last" style="display: flex; flex-direction: column;">
-                    <label for="children" class="search_label">Children</label>
-                    <input type="number" id="children" name="children" value="0" min="0">
+                <div class="date_input">
+                    <label for="check_in" class="search_label">Check-in</label>
+                    <input type="date" id="check_in" name="check_in">
                 </div>
+                <div class="date_input last">
+                    <label for="check_out" class="search_label">Check-out</label>
+                    <input type="date" id="check_out" name="check_out">
+                </div>
+                <div class="guest_input">
+                    <div style="display: flex; flex-direction: column;">
+                        <label for="adults" class="search_label">Adults</label>
+                        <input type="number" id="adults" name="adults" value="2" min="1">
+                    </div>
+                    <div class="last" style="display: flex; flex-direction: column;">
+                        <label for="children" class="search_label">Children</label>
+                        <input type="number" id="children" name="children" value="0" min="0">
+                    </div>
             </div>
             <button style="align-self: end;" type="submit">Search</button>
         </div>
-    </form>
+    </div>
+    </div>
+
+
     <div class="forside_accomadations">
     <div id="accommodations" class="forside_accommodations">
         <h2 style="text-align:center"> Explore Our Stays</h2>

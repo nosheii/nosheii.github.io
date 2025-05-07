@@ -92,36 +92,47 @@ html, body {
 .find_stay {
     font-size: large;
     text-transform:uppercase;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%); /*noe rare greier*/
     line-height: 14px;
     letter-spacing: 3px;  /* mellomrom mellom tekst*/
 }
 
 /*Forside tekst for "Home&Rentals"*/
 .home_rentals {
-    font-size: 45px;
-    position: absolute;
-    position: absolute;
-    top: 35%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    font-size: 82px;
     white-space: nowrap; /*gjør at teksten ikke breaker */
+}
 
+.forside_subtext {
+    background-color: rgba(239, 235, 229, 0.65);
+    border-radius: 40px;
+    padding-block: 20px;
+    padding-inline: 20px;
+    max-width: fit-content;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #623e2a;
+}
+
+.search_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
 }
 
 /* Nå skal jeg style hele søkebaren for å få den på plass midt i forsiden */
 .search_bar {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Dette er for å holde den i midten */
   background-color: #efebe5;
   background-color: rgba(239, 235, 229, 0.8); /* Gjør at den er litt gjennomsiktig */
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 10;
   display: flex;
@@ -156,7 +167,7 @@ html, body {
 .search_bar input[type="number"] {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 12px;
   font-size: 1em;
   width: 100%;
   box-sizing: border-box;
@@ -226,6 +237,7 @@ html, body {
 
 /*Her kommer de ulike CSS delene for grid layouten for "Accomodations */
 .forside_accommodations {
+  color: #623e2a;
   padding: 40px;
   background-color: #f4f1ed;
   text-align: center;
@@ -536,6 +548,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     text-align: center;
     margin-top: 1px;
     margin-bottom: 15px;
+    font-size: 17px;;
   }
 
   .signup__termsboks {
