@@ -121,7 +121,7 @@ html, body {
   background-color: #efebe5;
   background-color: rgba(239, 235, 229, 0.8); /* Gjør at den er litt gjennomsiktig */
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 10;
   display: flex;
@@ -156,7 +156,7 @@ html, body {
 .search_bar input[type="number"] {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 12px;
   font-size: 1em;
   width: 100%;
   box-sizing: border-box;
