@@ -622,7 +622,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 
 .top_destinations__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit , minmax(30px, 1fr));
     gap: 30px;
     justify-content: center;
 }
