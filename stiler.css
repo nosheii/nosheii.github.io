@@ -566,7 +566,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     display: flex;
     position: center;
     font-weight: bold;
-    align-items: center;
+    align-items: center.
   }
 
   .signup__checkbox input[type="checkbox"] {
@@ -1278,4 +1278,195 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
       width: 100%;
       max-width: 100%;
   }
+}
+
+/* Styling for bildene for accommodations */
+.accomodation_image_slider {
+  width: 300px;
+  text-align: center;
+  overflow: hidden; 
+}
+
+.accomodation_slides {
+  display: flex;
+  overflow-x:auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /*For smooth scrolling på IOS*/
+}
+
+.accomodation_slides::-webkit-scrollbar {
+  width: 10px; /* Skjuler scrollbar */
+  height: 10px;
+}
+
+.accomodation_slides::-webkit-scrollbar-thumb {
+  background: #623e2a; /* Farge på scrollbar */
+  border-radius: 10px;
+}
+
+.accomodation_slides::-webkit-scrollbar-track {
+  background: #f4f1ed; /* Farge på track */
+}
+
+.accomodation_slides > div {
+  scroll-snap-align: start; /* Gjør at bildene snapper til riktig plass */
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #a4968a;
+  transform-origin: center center; 
+  transform: transform 0.5s;
+  position:relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.accomodation_slides > div:target {
+  transform: scale(0.8); 
+}
+
+.accomodation_slides > div img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+}
+
+.accomodation_image_slider > a {
+  display:inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.accomodation_image_slider > a:active {
+  top:1px
+}
+
+.accomodation_image_slider >a:focus {
+  background: #000;
+}
+
+/* Accommodation page styles */
+.accomodations_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #623e2a;
+}
+
+.accomodations_container header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.accomodations_container h1 {
+    font-family: "CatchyMager", serif;
+    font-size: 48px;
+    color: #623e2a;
+    margin-bottom: 10px;
+}
+
+.accommodation-details {
+    margin-bottom: 40px;
+}
+
+.accommodation-details h2 {
+    font-size: 28px;
+    color: #623e2a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.accommodation-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Image Slider/Carousel Styles */
+.accomodation_image_slider {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.accomodation_image_slider a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #f5ebdd;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: #623e2a;
+    font-weight: bold;
+    z-index: 10;
+    position: relative;
+}
+
+.accomodation_image_slider a:hover {
+    background-color: #623e2a;
+    color: white;
+}
+
+.accomodation_slides {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.accomodation_slides > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.accomodation_slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Target the slides when corresponding link is clicked */
+#slide-1:target,
+#slide-2:target,
+#slide-3:target,
+#slide-4:target,
+#slide-5:target,
+#slide-6:target {
+    opacity: 1;
+}
+
+/* Make the first slide visible by default */
+#slide-1 {
+    opacity: 1;
 }
