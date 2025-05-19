@@ -566,7 +566,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     display: flex;
     position: center;
     font-weight: bold;
-    align-items: center.
+    align-items: center;
   }
 
   .signup__checkbox input[type="checkbox"] {
@@ -1280,87 +1280,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
   }
 }
 
-/* Styling for bildene for accommodations */
-.accomodation_image_slider {
-  width: 300px;
-  text-align: center;
-  overflow: hidden; 
-}
-
-.accomodation_slides {
-  display: flex;
-  overflow-x:auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; /*For smooth scrolling på IOS*/
-}
-
-.accomodation_slides::-webkit-scrollbar {
-  width: 10px; /* Skjuler scrollbar */
-  height: 10px;
-}
-
-.accomodation_slides::-webkit-scrollbar-thumb {
-  background: #623e2a; /* Farge på scrollbar */
-  border-radius: 10px;
-}
-
-.accomodation_slides::-webkit-scrollbar-track {
-  background: #f4f1ed; /* Farge på track */
-}
-
-.accomodation_slides > div {
-  scroll-snap-align: start; /* Gjør at bildene snapper til riktig plass */
-  flex-shrink: 0;
-  width: 300px;
-  height: 300px;
-  margin-right: 50px;
-  border-radius: 10px;
-  background: #a4968a;
-  transform-origin: center center; 
-  transform: transform 0.5s;
-  position:relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
-}
-.accomodation_slides > div:target {
-  transform: scale(0.8); 
-}
-
-.accomodation_slides > div img {
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height:100%;
-}
-
-.accomodation_image_slider > a {
-  display:inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: white;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border-radius: 50%;
-  margin: 0 0 0.5rem 0;
-  position: relative;
-}
-.accomodation_image_slider > a:active {
-  top:1px
-}
-
-.accomodation_image_slider >a:focus {
-  background: #000;
-}
-
-/* Accommodation page styles */
+/* Accommodation forsøk på styling dont judge */
 .accomodations_container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1375,7 +1295,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
 }
 
 .accomodations_container h1 {
-    font-family: "CatchyMager", serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
     color: #623e2a;
     margin-bottom: 10px;
@@ -1402,7 +1322,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     margin-right: auto;
 }
 
-/* Image Slider/Carousel Styles */
+/* Bilde karusellen wiiii */
 .accomodation_image_slider {
     position: relative;
     max-width: 900px;
@@ -1456,7 +1376,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     object-fit: cover;
 }
 
-/* Target the slides when corresponding link is clicked */
+/* Hvilke bilder som kommer når de blir trykket*/
 #slide-1:target,
 #slide-2:target,
 #slide-3:target,
@@ -1466,7 +1386,7 @@ størrelse så kan den også "auto-fit" til skjermens nye størrelse med samme r
     opacity: 1;
 }
 
-/* Make the first slide visible by default */
+/* Slide nr 1 vises ved start*/
 #slide-1 {
     opacity: 1;
 }
