@@ -16,35 +16,96 @@
         <main>
             <section class="accommodation-details">
                 <h2>Step Into a Fairytale</h2>
-                <div class="accomodation_image_slider">
-                    <p>Experience the magic of staying in a hobbit cabin nestled in the heart of Hallingdal, Norway.
-                        This unique accommodation offers a blend of comfort and adventure, perfect for those looking to
-                        escape the ordinary.</p>
-                    <a href="#slide-1">1</a>
-                    <a href="#slide-2">2</a>
-                    <a href="#slide-3">3</a>
-                    <a href="#slide-4">4</a>
-                    <a href="#slide-5">5</a>
-                    <a href="#slide-6">6</a>
-                    <div class="accomodation_slides">
-                        <div id="slide-1">
-                            <img src="bilder/hallingdal1.jpg" alt="Hallingdal 1">
+                <div class="accommodation-flex-row"
+                    style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center; align-items: flex-start;">
+                    <div class="accomodation_image_slider"
+                        style="flex: 1 1 340px; min-width: 320px; max-width: 500px;">
+                        <p>Experience the magic of staying in a hobbit cabin nestled in the heart of Hallingdal, Norway.
+                            This unique accommodation offers a blend of comfort and adventure, perfect for those looking
+                            to
+                            escape the ordinary.</p>
+                        <div style="display: flex; justify-content: center; margin-bottom: 10px; gap: 6px;">
+                            <a href="#slide-1">1</a>
+                            <a href="#slide-2">2</a>
+                            <a href="#slide-3">3</a>
+                            <a href="#slide-4">4</a>
+                            <a href="#slide-5">5</a>
+                            <a href="#slide-6">6</a>
                         </div>
-                        <div id="slide-2">
-                            <img src="bilder/hallingdal2.jpg" alt="Hallingdal 2">
+                        <div class="accomodation_slides">
+                            <div id="slide-1">
+                                <img src="bilder/hallingdal1.jpg" alt="Hallingdal 1">
+                            </div>
+                            <div id="slide-2">
+                                <img src="bilder/hallingdal2.jpg" alt="Hallingdal 2">
+                            </div>
+                            <div id="slide-3">
+                                <img src="bilder/hallingdal3.jpg" alt="Hallingdal 3">
+                            </div>
+                            <div id="slide-4">
+                                <img src="bilder/hallingdal4.jpg" alt="Hallingdal 4">
+                            </div>
+                            <div id="slide-5">
+                                <img src="bilder/hallingdal5.jpg" alt="Hallingdal 5">
+                            </div>
+                            <div id="slide-6">
+                                <img src="bilder/hallingdal6.jpg" alt="Hallingdal 6">
+                            </div>
                         </div>
-                        <div id="slide-3">
-                            <img src="bilder/hallingdal3.jpg" alt="Hallingdal 3">
+                    </div>
+                    <div class="accommodation_booking_box"
+                        style="flex: 1 1 320px; min-width: 280px; max-width: 400px; align-self: flex-start; display: flex; flex-direction: column;">
+                        <div class="accommodation_description"
+                            style="margin-bottom: 22px; font-size: 1.08em; line-height: 1.6; color: #222;">
+                            <strong>About this accommodation:</strong><br>
+                            Welcome to your cozy Hobbit Cabin retreat — a charming and unforgettable escape nestled deep in the heart of Hallingdal. 
+                            This unique and whimsical accommodation offers a magical blend of rustic charm and modern comfort, 
+                            providing the perfect setting for relaxation, adventure, and connection with nature.
+                            Inside, you’ll find warm wooden interiors, soft lighting, and thoughtful details that make the space both enchanting and practical. 
+                            Enjoy a well-equipped kitchen, cozy beds, and a peaceful atmosphere that will make you feel right at home. 
+                            Step outside to take in breathtaking views, explore nearby hiking trails, 
+                            or simply relax on the porch with a cup of coffee while listening to the sounds of nature.
+                            
+                            Escape the hustle and bustle of everyday life and immerse yourself in the peaceful magic of Hallingdal — where comfort meets adventure, 
+                            and every stay becomes a story worth telling.
                         </div>
-                        <div id="slide-4">
-                            <img src="bilder/hallingdal4.jpg" alt="Hallingdal 4">
+                        <div class="forside_room_price"
+                            style="font-size: 1.3em; margin-bottom: 10px; text-align: center;">From $220 per night
                         </div>
-                        <div id="slide-5">
-                            <img src="bilder/hallingdal5.jpg" alt="Hallingdal 5">
-                        </div>
-                        <div id="slide-6">
-                            <img src="bilder/hallingdal6.jpg" alt="Hallingdal 6">
-                        </div>
+                        <form class="booking_form"
+                            style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; background: #f8f8f8; border-radius: 12px; padding: 18px 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-top: 10px; justify-content: center;">
+                            <div style="display: flex; flex-direction: column;">
+                                <label for="check_in" class="search_label">Check-in</label>
+                                <input type="date" id="check_in" name="check_in" required>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <label for="check_out" class="search_label">Check-out</label>
+                                <input type="date" id="check_out" name="check_out" required>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <label for="adults" class="search_label">Adults</label>
+                                <select id="adults" name="adults" required style="min-width: 60px;">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <label for="children" class="search_label">Children</label>
+                                <select id="children" name="children" required style="min-width: 60px;">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="nav_button" style="margin-left: 12px;">Book now</button>
+                        </form>
                     </div>
                 </div>
             </section>
