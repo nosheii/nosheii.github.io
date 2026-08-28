@@ -4,8 +4,36 @@ body {
   font-family: sans-serif;
 }
 
-img {
+.bilde-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  perspective: 800px;
+}
+
+.bilde {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 20px;
+  opacity: 0;
+  transform-origin: top left;
+  transform: rotate3d(0, 0, 0, 0deg);
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.bilde.aktiv {
+  opacity: 1;
+}
+
+.bilde.flip-ut {
+  opacity: 0;
+  transform: rotate3d(1, 1, 0, -110deg);
 }
 
 .emoji {
