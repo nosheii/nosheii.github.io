@@ -2,6 +2,7 @@ body {
   background-color: #ffe4ec;
   text-align: center;
   font-family: sans-serif;
+  padding: 40px 20px;
 }
 
 .bilde-wrapper {
@@ -9,6 +10,7 @@ body {
   width: 250px;
   height: 250px;
   margin: 0 auto;
+  margin-bottom: 30px;
   perspective: 800px;
 }
 
@@ -34,6 +36,22 @@ body {
 .bilde.flip-ut {
   opacity: 0;
   transform: rotate3d(1, 1, 0, -110deg);
+}
+
+.boks-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.boks {
+  background-color: white;
+  color: #333;
+  border-radius: 15px;
+  padding: 30px 25px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .emoji {
