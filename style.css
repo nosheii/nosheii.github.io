@@ -1,0 +1,26 @@
+body {
+  background-color: #ffe4ec;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.emoji {
+  position: fixed;
+  font-size: 2rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+.emoji:nth-of-type(1) { top: 20%; left: 10%; animation-delay: 0s; }
+.emoji:nth-of-type(2) { top: 60%; left: 80%; animation-delay: 1.5s; }
+.emoji:nth-of-type(3) { top: 80%; left: 20%; animation-delay: 3s; }
+.emoji:nth-of-type(4) { top: 30%; left: 70%; animation-delay: 4.5s; }
+.emoji:nth-of-type(5) { top: 90%; left: 40%; animation-delay: 6s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-30px); }
+}
