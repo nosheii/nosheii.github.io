@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Nora Al-Tay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Nora Al-Tay</h1>
+  <div class="bilde-wrapper">
+    <img src="meg_selv.jpg" alt="Bilde av meg" class="bilde aktiv">
+    <img src="meg_selv2.png" alt="Bilde av meg" class="bilde">
+    <img src="meg_selv3.png" alt="Bilde av meg" class="bilde">
+    <img src="pus_1.png" alt="Bilde av pus" class="bilde">
+    <img src="pus_2.png" alt="Bilde av pus" class="bilde">
+    <img src="meg_husband.png" alt="Bilde av meg og ektemann" class="bilde">
+  </div>
+  <p>Alder: 29 år</p>
+  <p>Bosted: Drammen, Norge</p>
+  <div class="emoji">🩷</div>
+  <div class="emoji">✨</div>
+  <div class="emoji">💖</div>
+  <div class="emoji">🩷</div>
+  <div class="emoji">✨</div>
+
+  <p style="font-size: 20px; color: #333;">Jeg er en kvinne som studerer IT og informasjonsystemer
+    ved Universitetet i Sør-Øst Norge. Jeg er glad i alt teknisk og design.</p>
+
+  <script>
+  const wrapper = document.querySelector('.bilde-wrapper');
+  const bilder = document.querySelectorAll('.bilde');
+  let index = 0;
+  let intervalId = null;
+
+  wrapper.addEventListener('mouseenter', () => {
+    intervalId = setInterval(() => {
+      bilder[index].classList.remove('aktiv');
+      index = (index + 1) % bilder.length;
+      bilder[index].classList.add('aktiv');
+    }, 1500);
+  });
+
+  wrapper.addEventListener('mouseleave', () => {
+    clearInterval(intervalId);
+  });
+</script>
+
+</body>
+</html>

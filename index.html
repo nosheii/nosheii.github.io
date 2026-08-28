@@ -2,49 +2,36 @@
 <html lang="no">
 <head>
   <meta charset="UTF-8">
-  <img src="myname.gif" alt="Nora Al-Tay" class="navn-gif">
-  <link rel="stylesheet" href="style.css">
+  <title>Nora Al-Tay</title>
+  <link rel="stylesheet" href="stylesForFIERYPITS.css">
 </head>
 <body>
+  
+  <img src="myname.gif" alt="Nora Al-Tay" class="navn-gif">
+  <h1>Ønsker deg velkommen....</h1>
+  <h2> til hennes onde side....</h2>
+  <h3> For å escape, trykk på døren... </h3>
+  <p>Kanskje du kommer deg ut....</p>
 
-  <h1>Velkommen til meg</h1>
-  <div class="bilde-wrapper">
-    <img src="meg_selv.jpg" alt="Bilde av meg" class="bilde aktiv">
-    <img src="meg_selv2.png" alt="Bilde av meg" class="bilde">
-    <img src="meg_selv3.png" alt="Bilde av meg" class="bilde">
-    <img src="pus_1.png" alt="Bilde av pus" class="bilde">
-    <img src="pus_2.png" alt="Bilde av pus" class="bilde">
-    <img src="meg_husband.png" alt="Bilde av meg og ektemann" class="bilde">
-  </div>
-  <p>Alder: 29 år</p>
-  <p>Bosted: Drammen, Norge</p>
-  <div class="emoji">🩷</div>
-  <div class="emoji">✨</div>
-  <div class="emoji">💖</div>
-  <div class="emoji">🩷</div>
-  <div class="emoji">✨</div>
+  <div class="emoji">🔥</div>
+  <div class="emoji">💀</div>
+  <div class="emoji">🩸</div>
+  <div class="emoji">🗡️</div>
+  <div class="emoji">👹</div>
 
-  <p style="font-size: 20px; color: #333;">Jeg er en kvinne som studerer IT og informasjonsystemer
-    ved Universitetet i Sør-Øst Norge. Jeg er glad i alt teknisk og design.</p>
+  <img src="dor_lukket.png" alt="Lukket dør" class="dor-gif" id="dor">
 
   <script>
-  const wrapper = document.querySelector('.bilde-wrapper');
-  const bilder = document.querySelectorAll('.bilde');
-  let index = 0;
-  let intervalId = null;
+    const dor = document.getElementById('dor');
 
-  wrapper.addEventListener('mouseenter', () => {
-    intervalId = setInterval(() => {
-      bilder[index].classList.remove('aktiv');
-      index = (index + 1) % bilder.length;
-      bilder[index].classList.add('aktiv');
-    }, 1500);
-  });
+    dor.addEventListener('click', () => {
+      dor.src = 'dor_apen.gif';
 
-  wrapper.addEventListener('mouseleave', () => {
-    clearInterval(intervalId);
-  });
-</script>
+      setTimeout(() => {
+        window.location.href = 'faktisk_side.html';
+      }, 2000);
+    });
+  </script>
 
 </body>
 </html>
