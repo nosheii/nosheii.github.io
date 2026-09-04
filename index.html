@@ -10,74 +10,229 @@
 </head>
 <body>
 
-    <div class="scene" id="scene">
+    <main class="scene" id="scene" aria-label="Nora sin portefølje">
 
-        <div class="pipe-container">
+        <section class="intro-panel" aria-labelledby="intro-title">
+            <span class="intro-kicker">PLAYER 01 / PORTFOLIO</span>
+            <h1 id="intro-title">HEI, JEG ER <span>NORA</span></h1>
+            <p class="intro-description">Jeg programmerer og designer gøye digitale opplevelser :3</p>
+            <p class="intro-prompt">↓ Klikk på et rør for å utforske ↓</p>
+        </section>
 
-            <div class="pipe-wrapper" data-content="prosjekter">
+        <div class="pipe-container" id="pipeContainer">
+
+            <div class="pipe-wrapper" data-content="prosjekter" role="button" tabindex="0"
+                aria-expanded="false" aria-controls="bubble-prosjekter"
+                aria-label="Åpne Prosjekter">
                 <div class="person-slot">
-                    <div class="speech-bubble">
-                    <button class="close-button" onclick="closeBubble(this)">✕</button>
+                    <img src="me_waving.png" class="person" alt="" aria-hidden="true">
+                </div>
+                <div class="speech-bubble" id="bubble-prosjekter" role="dialog"
+                    aria-labelledby="title-prosjekter" aria-hidden="true">
+                    <button class="close-button" type="button" aria-label="Lukk Prosjekter">✕</button>
                     <p class="teaser-text">Sjekk ut prosjektene mine!</p>
                     <div class="full-content">
-                        <h2>Prosjekter</h2>
-                        <p>Her kommer en oversikt over prosjektene mine. Bytt ut denne teksten med faktisk innhold.</p>
+                        <span class="bubble-kicker">01 / UTVALGTE PROSJEKTER</span>
+                        <h2 id="title-prosjekter">Prosjekter</h2>
+                        <div class="project-card">
+                            <span class="project-type">WEBAPPLIKASJON / STUDENTPROSJEKT</span>
+                            <h3>Eaze helsejournal</h3>
+                            <p>Eaze er en omfattende, rollebasert helsejournal for leger og pasienter. Løsningen samler journaler, resepter, vaksiner, avtaler og meldinger i ett system.</p>
+                            <p class="project-stack"><strong>Teknologi:</strong> React, Vite, FastAPI, Python, SQLite og JWT.</p>
+                            <p class="project-note">Jeg jobbet omfattende med utviklingen av dette prosjektet i Applikasjonsutvikling for Web ved USN.</p>
+                            <a class="project-link" href="https://github.com/nosheii/Eaze_Helsejournal" target="_blank" rel="noopener noreferrer">Se Eaze på GitHub ↗</a>
+                        </div>
                     </div>
                 </div>
-                <img src="me_waving.png" class="person" alt="Person 1">
-                </div>
-                <img src="roar.png" class="pipe" alt="Rør 1">
+                <img src="roar.png" class="pipe" alt="" aria-hidden="true">
             </div>
 
-            <div class="pipe-wrapper" data-content="om-meg">
+            <div class="pipe-wrapper" data-content="om-meg" role="button" tabindex="0"
+                aria-expanded="false" aria-controls="bubble-om-meg"
+                aria-label="Åpne Om meg">
                 <div class="person-slot">
-                    <div class="speech-bubble">
-                    <button class="close-button" onclick="closeBubble(this)">✕</button>
+                    <img src="me_waving.png" class="person" alt="" aria-hidden="true">
+                </div>
+                <div class="speech-bubble" id="bubble-om-meg" role="dialog"
+                    aria-labelledby="title-om-meg" aria-hidden="true">
+                    <button class="close-button" type="button" aria-label="Lukk Om meg">✕</button>
                     <p class="teaser-text">Vil du vite mer om meg?</p>
-                    <div class="full-content">
-                        <h2>Om meg</h2>
-                        <p>Her kommer litt om deg selv. Bytt ut denne teksten med faktisk innhold.</p>
+                    <div class="full-content about-content">
+                        <span class="bubble-kicker">02 / BLI KJENT</span>
+                        <h2 id="title-om-meg">Om meg</h2>
+                        <p>Jeg bor i Drammen sammen med mannen min og mine to puser. På fritiden liker jeg å trene, kode, tegne og drive med scrapbooking.</p>
+                        <div class="about-highlights" aria-label="Små fakta om meg">
+                            <span>2 PUSER</span>
+                            <span>DRAMMEN</span>
+                            <span>RØD PRIUS</span>
+                        </div>
+                        <div class="about-after">
+                            <div class="about-copy">
+                                <p>Jeg kjører en rød Prius som jeg er veldig glad i, og liker å holde meg oppdatert på teknologi. Jeg er alltid nysgjerrig og liker å lære nye ting.</p>
+                                <p>Jeg kan snakke og skrive flytende norsk, engelsk og arabisk</p>
+                            </div>
+                            <img class="about-cats" src="about-cats.png" alt="To mørke tabbykatter">
+                        </div>
                     </div>
                 </div>
-                <img src="me_waving.png" class="person" alt="Person 2">
-                </div>
-                <img src="roar.png" class="pipe" alt="Rør 2">
+                <img src="roar.png" class="pipe" alt="" aria-hidden="true">
             </div>
 
-            <div class="pipe-wrapper" data-content="cv">
+            <div class="pipe-wrapper" data-content="cv" role="button" tabindex="0"
+                aria-expanded="false" aria-controls="bubble-cv"
+                aria-label="Åpne CV">
                 <div class="person-slot">
-                    <div class="speech-bubble">
-                    <button class="close-button" onclick="closeBubble(this)">✕</button>
+                    <img src="me_waving.png" class="person" alt="" aria-hidden="true">
+                </div>
+                <div class="speech-bubble" id="bubble-cv" role="dialog"
+                    aria-labelledby="title-cv" aria-hidden="true">
+                    <button class="close-button" type="button" aria-label="Lukk CV">✕</button>
                     <p class="teaser-text">Nysgjerrig på CV-en min?</p>
                     <div class="full-content">
-                        <h2>CV</h2>
-                        <p>Her kommer CV-en din, eller en lenke til å laste den ned. Bytt ut denne teksten.</p>
+                        <span class="bubble-kicker">03 / ERFARING OG UTDANNING</span>
+                        <h2 id="title-cv">CV</h2>
+                        <section class="cv-section" aria-labelledby="cv-education-title">
+                            <h3 class="cv-section-title" id="cv-education-title">Utdanning</h3>
+                            <article class="cv-item">
+                                <div class="cv-item-heading">
+                                    <h4>IT og informasjonssystemer</h4>
+                                    <span class="cv-date">Pågår · ferdig juni 2027</span>
+                                </div>
+                                <p class="cv-place">USN · Campus Hønefoss</p>
+                            </article>
+                            <article class="cv-item">
+                                <div class="cv-item-heading">
+                                    <h4>Bachelor i økonomi og ledelse</h4>
+                                    <span class="cv-date">Fullført 2020</span>
+                                </div>
+                                <p class="cv-place">USN · Campus Drammen</p>
+                            </article>
+                        </section>
+
+                        <section class="cv-section" aria-labelledby="cv-tech-title">
+                            <h3 class="cv-section-title" id="cv-tech-title">Teknologi</h3>
+                            <div class="cv-skills" aria-labelledby="cv-tech-title">
+                                <div class="cv-skill-row">
+                                    <span class="cv-skill-label">Programmering</span>
+                                    <span class="cv-skill-list">HTML · CSS · JavaScript · React · FastAPI</span>
+                                </div>
+                                <div class="cv-skill-row">
+                                    <span class="cv-skill-label">Databaser</span>
+                                    <span class="cv-skill-list">MySQL · PostgreSQL</span>
+                                </div>
+                                <div class="cv-skill-row">
+                                    <span class="cv-skill-label">Verktøy</span>
+                                    <span class="cv-skill-list">Git · GitHub · VS Code</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="cv-section" aria-labelledby="cv-work-title">
+                            <h3 class="cv-section-title" id="cv-work-title">Arbeidserfaring</h3>
+                            <article class="cv-item">
+                                <div class="cv-item-heading">
+                                    <h4>Collection advisor</h4>
+                                    <span class="cv-date">des. 2024 – nå</span>
+                                </div>
+                                <p class="cv-place">Axactor Norway AS · Deltid · Drammen</p>
+                                <p class="cv-description">Veileder kunder til gode løsninger for å betale ned gjeld og utestående betalinger. Arbeider også med saksbehandling innen inkasso og bistår med opplæring av nye ansatte.</p>
+                            </article>
+                            <article class="cv-item">
+                                <div class="cv-item-heading">
+                                    <h4>Jobbkonsulent</h4>
+                                    <span class="cv-date">sep. 2023 – aug. 2024</span>
+                                </div>
+                                <p class="cv-place">Fretex Jobb · Heltid · Åmot i Modum</p>
+                                <p class="cv-description">Hjalp jobbsøkere med å finne arbeid gjennom veiledning, oppfølging og målrettet jobbsøking. Arbeidet også med markedsarbeid og kontakt med nye arbeidsgivere for å finne gode matcher.</p>
+                            </article>
+                            <article class="cv-item">
+                                <div class="cv-item-heading">
+                                    <h4>Konsulent · refusjonsavdelingen</h4>
+                                    <span class="cv-date">nov. 2022 – sep. 2023</span>
+                                </div>
+                                <p class="cv-place">Sykehuspartner HF · Heltid</p>
+                                <p class="cv-description">Bisto med behandling av sykemeldinger for ansatte ved sykehus over hele landet, og bidro også med opplæring.</p>
+                            </article>
+                            <article class="cv-item">
+                                <div class="cv-item-heading">
+                                    <h4>Butikkmedarbeider · stengeansvarlig</h4>
+                                    <span class="cv-date">jun. 2020 – des. 2022</span>
+                                </div>
+                                <p class="cv-place">REMA 1000 Norge · Deltid · Vikersund</p>
+                                <p class="cv-description">Hadde ansvar for stenging av butikken og utførte daglige butikk- og kundeserviceoppgaver.</p>
+                            </article>
+                            <article class="cv-item">
+                                <div class="cv-item-heading">
+                                    <h4>Lærerassistent · lærervikar · SFO</h4>
+                                    <span class="cv-date">feb. 2022 – nov. 2022</span>
+                                </div>
+                                <p class="cv-place">Modum kommune · Buskerud barneskole · Åmot i Modum</p>
+                                <p class="cv-description">Bisto elever og lærere som lærerassistent og lærervikar, og arbeidet også ved SFO.</p>
+                            </article>
+                            <article class="cv-item">
+                                <div class="cv-item-heading">
+                                    <h4>Språkassistent (arabisk tolk) → miljøkonsulent</h4>
+                                    <span class="cv-date">feb. 2021 – jun. 2022</span>
+                                </div>
+                                <p class="cv-place">NAV Vest-Viken · Vikariat</p>
+                                <p class="cv-description">Startet som språkassistent og arabisk tolk, før jeg gikk over til miljøkonsulent. Arbeidet blant annet med veiledning, søknader og andre oppgaver ved behov.</p>
+                            </article>
+                            <article class="cv-item">
+                                <div class="cv-item-heading">
+                                    <h4>Servitør · bartender · stuepike</h4>
+                                    <span class="cv-date">aug. 2017 – jan. 2019</span>
+                                </div>
+                                <p class="cv-place">Tyrifjord Hotel · Deltid · Vikersund</p>
+                                <p class="cv-description">Arbeidet innen servering, bar og hotell, og hadde også ansvar for konferanser og selskaper som kurs, bryllup og konfirmasjoner.</p>
+                            </article>
+                            <article class="cv-item">
+                                <div class="cv-item-heading">
+                                    <h4>Sesonghjelp · butikkmedarbeider</h4>
+                                    <span class="cv-date">jun. 2017 – aug. 2017</span>
+                                </div>
+                                <p class="cv-place">Christiana Glasmagasin · Sesongbasert · Krokstadelva</p>
+                                <p class="cv-description">Arbeidet med kundeservice, rydding i butikk og bestilling av varer.</p>
+                            </article>
+                            <article class="cv-item">
+                                <div class="cv-item-heading">
+                                    <h4>Servicemedarbeider med kasseansvar</h4>
+                                    <span class="cv-date">jul. 2015 – apr. 2017</span>
+                                </div>
+                                <p class="cv-place">Burger King · Krokstadelva</p>
+                                <p class="cv-description">Min første jobb, med erfaring fra kjøkken, kasse og drive-through.</p>
+                            </article>
+                        </section>
                     </div>
                 </div>
-                <img src="me_waving.png" class="person" alt="Person 3">
-                </div>
-                <img src="roar.png" class="pipe" alt="Rør 3">
+                <img src="roar.png" class="pipe" alt="" aria-hidden="true">
             </div>
 
-            <div class="pipe-wrapper" data-content="kontakt">
+            <div class="pipe-wrapper" data-content="kontakt" role="button" tabindex="0"
+                aria-expanded="false" aria-controls="bubble-kontakt"
+                aria-label="Åpne Kontakt">
                 <div class="person-slot">
-                    <div class="speech-bubble">
-                    <button class="close-button" onclick="closeBubble(this)">✕</button>
+                    <img src="me_waving.png" class="person" alt="" aria-hidden="true">
+                </div>
+                <div class="speech-bubble" id="bubble-kontakt" role="dialog"
+                    aria-labelledby="title-kontakt" aria-hidden="true">
+                    <button class="close-button" type="button" aria-label="Lukk Kontakt">✕</button>
                     <p class="teaser-text">Vil du komme i kontakt?</p>
                     <div class="full-content">
-                        <h2>Kontakt</h2>
-                        <p>Her kommer kontaktinfo/skjema. Bytt ut denne teksten med faktisk innhold.</p>
+                        <span class="bubble-kicker">04 / SI HEI</span>
+                        <h2 id="title-kontakt">Kontakt</h2>
+                        <p>Har du en idé, et prosjekt eller bare lyst til å si hei? Ta gjerne kontakt, så svarer jeg så snart jeg kan.</p>
+                        <div class="contact-details" aria-label="Kontaktinformasjon">
+                            <a href="mailto:noshe1997@hotmail.com">noshe1997@hotmail.com</a>
+                            <a href="tel:+4790873811">+47 908 73 811</a>
+                            <a href="https://www.linkedin.com/in/nora-al-tay-34145924b/" target="_blank" rel="noopener noreferrer">LinkedIn-profil ↗</a>
+                        </div>
                     </div>
                 </div>
-                <img src="me_waving.png" class="person" alt="Person 4">
-                </div>
-                <img src="roar.png" class="pipe" alt="Rør 4">
+                <img src="roar.png" class="pipe" alt="" aria-hidden="true">
             </div>
 
         </div>
-    </div>
-
-    <div class="overlay-backdrop" id="overlayBackdrop"></div>
+    </main>
 
     <script src="script.js"></script>
 </body>
