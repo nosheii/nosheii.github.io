@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Nora Al-Tay</title>
+  <link rel="stylesheet" href="stylesForFIERYPITS.css">
+</head>
+<body>
+  
+  <img src="myname.gif" alt="Nora Al-Tay" class="navn-gif">
+  <h1>Ønsker deg velkommen....</h1>
+  <h2> til hennes onde side....</h2>
+  <h3> For å escape, trykk på døren... </h3>
+  <p>Kanskje du kommer deg ut....</p>
+
+  <div class="emoji">🔥</div>
+  <div class="emoji">💀</div>
+  <div class="emoji">🩸</div>
+  <div class="emoji">🗡️</div>
+  <div class="emoji">👹</div>
+
+  <img src="dor_lukket.png" alt="Lukket dør" class="dor-gif" id="dor">
+
+  <script>
+    const dor = document.getElementById('dor');
+
+    dor.addEventListener('click', () => {
+      dor.src = 'dor_apen.gif';
+
+      setTimeout(() => {
+        window.location.href = 'faktisk_side.html';
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>

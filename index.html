@@ -1,37 +1,84 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <title>Nora Al-Tay</title>
-  <link rel="stylesheet" href="stylesForFIERYPITS.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nora Al Tay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-  <img src="myname.gif" alt="Nora Al-Tay" class="navn-gif">
-  <h1>Ønsker deg velkommen....</h1>
-  <h2> til hennes onde side....</h2>
-  <h3> For å escape, trykk på døren... </h3>
-  <p>Kanskje du kommer deg ut....</p>
 
-  <div class="emoji">🔥</div>
-  <div class="emoji">💀</div>
-  <div class="emoji">🩸</div>
-  <div class="emoji">🗡️</div>
-  <div class="emoji">👹</div>
+    <div class="scene" id="scene">
 
-  <img src="dor_lukket.png" alt="Lukket dør" class="dor-gif" id="dor">
+        <div class="pipe-container">
 
-  <script>
-    const dor = document.getElementById('dor');
+            <div class="pipe-wrapper" data-content="prosjekter">
+                <div class="person-slot">
+                    <div class="speech-bubble">
+                    <button class="close-button" onclick="closeBubble(this)">✕</button>
+                    <p class="teaser-text">Sjekk ut prosjektene mine!</p>
+                    <div class="full-content">
+                        <h2>Prosjekter</h2>
+                        <p>Her kommer en oversikt over prosjektene mine. Bytt ut denne teksten med faktisk innhold.</p>
+                    </div>
+                </div>
+                <img src="me_waving.png" class="person" alt="Person 1">
+                </div>
+                <img src="roar.png" class="pipe" alt="Rør 1">
+            </div>
 
-    dor.addEventListener('click', () => {
-      dor.src = 'dor_apen.gif';
+            <div class="pipe-wrapper" data-content="om-meg">
+                <div class="person-slot">
+                    <div class="speech-bubble">
+                    <button class="close-button" onclick="closeBubble(this)">✕</button>
+                    <p class="teaser-text">Vil du vite mer om meg?</p>
+                    <div class="full-content">
+                        <h2>Om meg</h2>
+                        <p>Her kommer litt om deg selv. Bytt ut denne teksten med faktisk innhold.</p>
+                    </div>
+                </div>
+                <img src="me_waving.png" class="person" alt="Person 2">
+                </div>
+                <img src="roar.png" class="pipe" alt="Rør 2">
+            </div>
 
-      setTimeout(() => {
-        window.location.href = 'faktisk_side.html';
-      }, 2000);
-    });
-  </script>
+            <div class="pipe-wrapper" data-content="cv">
+                <div class="person-slot">
+                    <div class="speech-bubble">
+                    <button class="close-button" onclick="closeBubble(this)">✕</button>
+                    <p class="teaser-text">Nysgjerrig på CV-en min?</p>
+                    <div class="full-content">
+                        <h2>CV</h2>
+                        <p>Her kommer CV-en din, eller en lenke til å laste den ned. Bytt ut denne teksten.</p>
+                    </div>
+                </div>
+                <img src="me_waving.png" class="person" alt="Person 3">
+                </div>
+                <img src="roar.png" class="pipe" alt="Rør 3">
+            </div>
 
+            <div class="pipe-wrapper" data-content="kontakt">
+                <div class="person-slot">
+                    <div class="speech-bubble">
+                    <button class="close-button" onclick="closeBubble(this)">✕</button>
+                    <p class="teaser-text">Vil du komme i kontakt?</p>
+                    <div class="full-content">
+                        <h2>Kontakt</h2>
+                        <p>Her kommer kontaktinfo/skjema. Bytt ut denne teksten med faktisk innhold.</p>
+                    </div>
+                </div>
+                <img src="me_waving.png" class="person" alt="Person 4">
+                </div>
+                <img src="roar.png" class="pipe" alt="Rør 4">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="overlay-backdrop" id="overlayBackdrop"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
