@@ -17,27 +17,242 @@ body {
     left: 0;
     width: 1168px;
     height: 784px;
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
+    background: linear-gradient(180deg, #49c3ef 0%, #63dff1 60%, #76eced 100%);
     transform-origin: top left;
 }
 
-/* En liten startskjerm som introduserer porteføljen før rørene tar over. */
+/* Behold bare bakken fra originalbildet. Slik møter himmelen gresstorven
+   direkte, uten den gamle stripen med en annen himmelfarge. */
+.scene::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 119px;
+    background-image: url('background.jpg');
+    background-position: center bottom;
+    background-size: 1168px 784px;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.cloud-layer {
+    position: absolute;
+    inset: 0 0 120px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.cloud {
+    --cloud-width: 150px;
+    --cloud-top: 100px;
+    --cloud-duration: 58s;
+    --cloud-delay: 0s;
+    position: absolute;
+    top: var(--cloud-top);
+    left: 0;
+    width: var(--cloud-width);
+    height: auto;
+    opacity: 0.88;
+    image-rendering: pixelated;
+    transform: translate3d(-230px, 0, 0);
+    animation: cloud-drift var(--cloud-duration) linear var(--cloud-delay) infinite;
+    will-change: transform;
+}
+
+.cloud-one {
+    --cloud-width: 174px;
+    --cloud-top: 94px;
+    --cloud-duration: 67s;
+    --cloud-delay: -48s;
+}
+
+.cloud-two {
+    --cloud-width: 112px;
+    --cloud-top: 230px;
+    --cloud-duration: 78s;
+    --cloud-delay: -16s;
+    opacity: 0.72;
+}
+
+.cloud-three {
+    --cloud-width: 142px;
+    --cloud-top: 330px;
+    --cloud-duration: 62s;
+    --cloud-delay: -36s;
+    opacity: 0.8;
+}
+
+.cloud-four {
+    --cloud-width: 92px;
+    --cloud-top: 52px;
+    --cloud-duration: 84s;
+    --cloud-delay: -67s;
+    opacity: 0.68;
+}
+
+.cloud-five {
+    --cloud-width: 126px;
+    --cloud-top: 420px;
+    --cloud-duration: 72s;
+    --cloud-delay: -6s;
+    opacity: 0.74;
+}
+
+@keyframes cloud-drift {
+    from {
+        transform: translate3d(-230px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(1398px, 0, 0);
+    }
+}
+
+.grass-layer {
+    position: absolute;
+    right: 0;
+    bottom: 116px;
+    left: 0;
+    height: 92px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.grass {
+    --grass-left: 0%;
+    --grass-width: 78px;
+    --grass-duration: 3.2s;
+    --grass-delay: 0s;
+    position: absolute;
+    bottom: -12px;
+    left: var(--grass-left);
+    width: var(--grass-width);
+    aspect-ratio: 1;
+    background-image: url('grass-wind-frames.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 0;
+    background-size: 400% 100%;
+    image-rendering: pixelated;
+    animation: grass-frames var(--grass-duration) steps(1, end) var(--grass-delay) infinite;
+    will-change: background-position;
+}
+
+.grass-one {
+    --grass-left: 1.5%;
+    --grass-width: 82px;
+    --grass-duration: 3.4s;
+    --grass-delay: -2.1s;
+}
+
+.grass-two {
+    --grass-left: 10.5%;
+    --grass-width: 69px;
+    --grass-duration: 2.9s;
+    --grass-delay: -0.7s;
+}
+
+.grass-three {
+    --grass-left: 20.8%;
+    --grass-width: 76px;
+    --grass-duration: 3.15s;
+    --grass-delay: -1.65s;
+}
+
+.grass-four {
+    --grass-left: 31.7%;
+    --grass-width: 88px;
+    --grass-duration: 3.55s;
+    --grass-delay: -3.1s;
+}
+
+.grass-five {
+    --grass-left: 43.9%;
+    --grass-width: 72px;
+    --grass-duration: 2.8s;
+    --grass-delay: -1.2s;
+}
+
+.grass-six {
+    --grass-left: 51.4%;
+    --grass-width: 84px;
+    --grass-duration: 3.3s;
+    --grass-delay: -2.7s;
+}
+
+.grass-seven {
+    --grass-left: 63.2%;
+    --grass-width: 67px;
+    --grass-duration: 3s;
+    --grass-delay: -0.35s;
+}
+
+.grass-eight {
+    --grass-left: 72.6%;
+    --grass-width: 90px;
+    --grass-duration: 3.6s;
+    --grass-delay: -1.9s;
+}
+
+.grass-nine {
+    --grass-left: 84.8%;
+    --grass-width: 74px;
+    --grass-duration: 3.1s;
+    --grass-delay: -2.4s;
+}
+
+.grass-ten {
+    --grass-left: 92.1%;
+    --grass-width: 86px;
+    --grass-duration: 3.45s;
+    --grass-delay: -0.95s;
+}
+
+.grass-eleven {
+    --grass-left: 97.8%;
+    --grass-width: 65px;
+    --grass-duration: 2.85s;
+    --grass-delay: -2.2s;
+}
+
+@keyframes grass-frames {
+    0%,
+    24.99% {
+        background-position: 0% 0;
+    }
+
+    25%,
+    49.99% {
+        background-position: 33.333% 0;
+    }
+
+    50%,
+    74.99% {
+        background-position: 66.667% 0;
+    }
+
+    75%,
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+/* Stor, åpen introtypografi som hører hjemme i spillverdenen. */
 .intro-panel {
     position: absolute;
-    top: var(--intro-top, 28px);
+    top: var(--intro-top, 38px);
     left: 50%;
     box-sizing: border-box;
-    width: min(650px, 90vw);
-    padding: 18px 30px 16px;
-    background: rgba(255, 248, 231, 0.9);
-    border: 3px solid #2b2b2b;
-    border-radius: 16px;
-    color: #2b2b2b;
+    width: 790px;
+    padding: 0 24px;
+    color: #fff8e7;
     font-family: 'VT323', monospace;
     text-align: center;
-    box-shadow: 8px 10px 0 rgba(43, 43, 43, 0.22);
     transform: translateX(-50%);
     transition: opacity 0.25s ease, transform 0.35s ease;
     z-index: 4;
@@ -53,56 +268,67 @@ body {
 .intro-panel::after {
     content: "✦";
     position: absolute;
-    top: 50%;
-    color: #4b9e17;
-    font-size: 24px;
+    top: 55px;
+    color: #fff8e7;
+    font-size: 26px;
     line-height: 1;
-    transform: translateY(-50%);
+    text-shadow: 3px 3px 0 rgba(38, 79, 93, 0.35);
 }
 
 .intro-panel::before {
-    left: 14px;
+    left: 36px;
 }
 
 .intro-panel::after {
-    right: 14px;
+    right: 36px;
 }
 
 .intro-kicker {
-    display: block;
-    margin-bottom: 4px;
-    color: #4b9e17;
-    font-size: 14px;
-    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 5px 12px 4px;
+    background: #4b9e17;
+    border: 3px solid #2b2b2b;
+    border-radius: 4px;
+    color: #fff8e7;
+    font-size: 16px;
+    letter-spacing: 2.5px;
     line-height: 1;
+    box-shadow: 4px 4px 0 rgba(43, 43, 43, 0.22);
 }
 
 .intro-panel h1 {
     margin: 0;
-    font-size: 54px;
+    font-size: 88px;
     font-weight: 400;
-    line-height: 0.86;
-    letter-spacing: 1px;
-    text-shadow: 3px 3px 0 rgba(43, 43, 43, 0.18);
+    line-height: 0.82;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 0 #2b2b2b;
 }
 
 .intro-panel h1 span {
     display: inline-block;
-    color: #E1768C;
-    text-shadow: 3px 3px 0 #2b2b2b;
+    color: #f18ca1;
+    text-shadow: 5px 5px 0 #2b2b2b;
     animation: intro-name-pop 0.8s 0.15s cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 
 .intro-description {
-    margin: 9px 0 8px;
-    font-size: 22px;
-    line-height: 1;
+    width: fit-content;
+    margin: 17px auto 12px;
+    padding: 5px 12px 4px;
+    background: rgba(43, 43, 43, 0.74);
+    border-radius: 4px;
+    font-size: 25px;
+    line-height: 1.05;
+    box-shadow: 4px 4px 0 rgba(43, 43, 43, 0.16);
 }
 
 .intro-prompt {
     margin: 0;
-    color: #4b9e17;
-    font-size: 17px;
+    color: #2b2b2b;
+    font-size: 19px;
+    text-shadow: 1px 1px 0 rgba(255, 248, 231, 0.55);
     line-height: 1;
     animation: intro-prompt-pulse 2.2s ease-in-out infinite;
 }
@@ -140,6 +366,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+    z-index: 2;
 }
 
 .pipe-wrapper {
@@ -676,8 +903,18 @@ body {
     }
 
     .intro-panel h1 span,
-    .intro-prompt {
+    .intro-prompt,
+    .cloud,
+    .grass {
         animation: none;
+    }
+
+    .cloud {
+        transform: none;
+    }
+
+    .grass {
+        background-position: 0% 0;
     }
 
     .pipe-wrapper.is-open .person {
@@ -690,16 +927,16 @@ body {
 @media (max-aspect-ratio: 1 / 1) {
     .intro-panel {
         top: 24px;
-        width: min(620px, 90vw);
-        padding: 16px 24px 14px;
+        width: 700px;
+        padding: 0 24px;
     }
 
     .intro-panel h1 {
-        font-size: 48px;
+        font-size: 76px;
     }
 
     .intro-description {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .pipe-wrapper {
@@ -725,15 +962,15 @@ body {
 
 @media (max-width: 520px) {
     .intro-panel {
-        padding: 14px 20px 12px;
+        padding: 0 20px;
     }
 
     .intro-panel h1 {
-        font-size: 42px;
+        font-size: 70px;
     }
 
     .intro-description {
-        font-size: 18px;
+        font-size: 21px;
         line-height: 1.05;
     }
 
